@@ -1,0 +1,20 @@
+# EditorConfig is awesome: https://EditorConfig.org
+
+# derived from withastro/docs MIT
+# https://github.com/withastro/docs/blob/main/.editorconfig
+# derived from microsoft/vscode MIT
+# https://github.com/microsoft/vscode/blob/main/.editorconfig
+
+# top-most EditorConfig file
+root = true
+
+[*]
+charset = utf-8
+end_of_line = lf
+indent_size = 2
+indent_style = tab
+insert_final_newline = true
+trim_trailing_whitespace = false
+
+[{.*,*.md,*.mdx,*.json,*.toml,*.yml,}]
+indent_style = space
