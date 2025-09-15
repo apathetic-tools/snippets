@@ -1,6 +1,6 @@
 # Windows Development Setup
 
-This [snippet](https://github.com/apathetic-tools/snippets) is by [Apathetic Tools](https://github.com/apathetic-tools), [LICENSE](../LICENSE) MIT.
+This [snippet](https://github.com/apathetic-tools/snippets) is by [Apathetic Tools](https://github.com/apathetic-tools), [LICENSE](../../LICENSE) MIT.
 
 ## Paved Road
 
@@ -37,7 +37,7 @@ If you pick VSCode, then we suggest your project include a few things:
 
 ### Workspace shortcut
 
-`workspace.code-workspace` ([ours](../workspace.code-workspace))
+`workspace.code-workspace` ([ours](../../workspace.code-workspace))
 ```
 {
 	"folders": [
@@ -53,7 +53,7 @@ All this does is make it so that in `Windows Explorer` you can double click this
 
 ### Git ignore
 
-`.gitignore` ([ours](../.gitignore))
+`.gitignore` ([ours](../../.gitignore))
 ```git
 # environment variables
 .env
@@ -108,7 +108,7 @@ We recommend you direct developers to install extensions, but "disable" them imm
 
 A good way to provide good editor defaults to a wide range of editors is `.editorconfig`, supported often with plugins for a wide range of IDEs. Your defaults don't matter so much, just that you have them, so you can get on with working on the project and have everything inside your project files consistent.
 
-Our recommended `.editorconfig` ([ours](../.editoronfig))
+Our recommended `.editorconfig` ([ours](../../.editoronfig))
 ```
 # EditorConfig is awesome: https://EditorConfig.org
 

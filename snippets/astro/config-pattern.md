@@ -1,6 +1,6 @@
 # Config Pattern for Astro
 
-This [snippet](https://github.com/apathetic-tools/snippets) is by [Apathetic Tools](https://github.com/apathetic-tools), [LICENSE](../LICENSE) MIT.
+This [snippet](https://github.com/apathetic-tools/snippets) is by [Apathetic Tools](https://github.com/apathetic-tools), [LICENSE](../../LICENSE) MIT.
 
 This is a common pattern for [Astro](https://astro.build/) projects but also more generally any framework project. It can help cleanup your framework configuration files tremeandously.
 

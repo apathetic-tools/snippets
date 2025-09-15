@@ -1,6 +1,6 @@
 # Git – Per Repository User
 
-This [snippet](https://github.com/apathetic-tools/snippets) is by [Apathetic Tools](https://github.com/apathetic-tools), [LICENSE](../LICENSE) MIT.
+This [snippet](https://github.com/apathetic-tools/snippets) is by [Apathetic Tools](https://github.com/apathetic-tools), [LICENSE](../../LICENSE) MIT.
 
 You can configure git to use a different user per repository. This can be important if you have multiple accounts, say between github and gitlab, or even multiple accounts on github, say for work or personal.
 

@@ -1,6 +1,6 @@
 # Config Pattern for Astro
 
-This [snippet](https://github.com/apathetic-tools/snippets) is by [Apathetic Tools](https://github.com/apathetic-tools), [LICENSE](../../LICENSE) MIT.
+This [snippet](https://github.com/apathetic-tools/snippets) is by [Apathetic Tools](https://github.com/apathetic-tools), [LICENSE](../../../LICENSE) MIT.
 
 This is a CSS fix for the theme selector menu in windows firefox for [Astro](https://astro.build/) projects using the [Starlight](https://starlight.astro.build/) integration/theme.
 
