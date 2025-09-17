@@ -12,7 +12,11 @@ In Firefox on Windows, the default Starlight theme has a bug in dark mode:
 - The theme selector `<select>` menu has a **white background**.  
 - Checked and hover states render with **white text on white background**, making them illegible.
 
-> ⚡ **Recommendation:** Apply this workaround only if you need it immediately. The Firefox team may fix [this problem](https://bugzilla.mozilla.org/show_bug.cgi?id=1810958) (+2y open), or Starlight team may provide an official workaround in the future — follow the [discussion #3180](https://github.com/withastro/starlight/discussions/3180) for updates.
+You can observe the issue on sites such as the [official Astro Docs site](https://docs.astro.build/) or the [Starlight preview site](https://astro.new/latest/preview/starlight-basics/), though behavior may vary depending on your setup.
+
+On Firefox on Windows, if the problem is occurring, it should look something like:
+
+![**Before** fix: white text on white background in theme selector](./theme-selector-firefox-windows-fix-assets/theme-selector-bad-colors.png)
 
 ## Upstream References
 - [Firefox bug #1810958](https://bugzilla.mozilla.org/show_bug.cgi?id=1810958)
@@ -21,10 +25,9 @@ In Firefox on Windows, the default Starlight theme has a bug in dark mode:
 
 ## Workaround
 
+> ⚡ **Recommendation:** Apply this workaround only if you need it immediately. The Firefox team may fix [this problem](https://bugzilla.mozilla.org/show_bug.cgi?id=1810958) (+2y open), or Starlight team may provide an official workaround in the future — follow the [discussion #3180](https://github.com/withastro/starlight/discussions/3180) for updates.
+
 1. Add a `customCss` key to your Starlight integration in `astro.config.mjs` (`.ts`, etc.) if you don’t already have one:
-
-
-in your `astro.config.ts`, add a `customCss` key to your Starlight integration if you don't already have one:
 
 ```js
 import { defineConfig } from 'astro/config';
@@ -85,7 +88,13 @@ If you don't use Tailwind, simply import `./theme-menu-layer.css` from your `glo
 
 ⚠️ Test across multiple browsers, screen widths, and themes to ensure consistency with your color palette.
 
-## Optional: Target Firefox Only
+On Firefox on Windows, the fix should now look something like:
+
+![**After** fix: dark background with readable text in theme selector](./theme-selector-firefox-windows-fix-assets/theme-selector-fixed-colors.png)
+
+## Optional: Restrict Fix to Firefox Only
+
+⚠️ **Warning:** Targeting Firefox or Windows only is non-standard and may break whenever Firefox updates.
 
 To restrict the fix to Firefox on Windows (more brittle), wrap the rules:
 
@@ -96,8 +105,6 @@ To restrict the fix to Firefox on Windows (more brittle), wrap the rules:
   }
 }
 ```
-
-This is **non-standard** and may break at any time when Firefox makes changes to their browser.
 
 ---
 
