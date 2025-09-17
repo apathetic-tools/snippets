@@ -27,4 +27,4 @@ A collection of small, practical snippets and guides.
 
 ---
 
-> These snippets are MIT-licensed for easy reuse, even though many of our full projects are AGPLv3.
+> These snippets are MIT-licensed for easy reuse, even though some of our full projects are AGPLv3.
