@@ -4,9 +4,7 @@ A collection of small, practical snippets and guides.
 
 **License:** [MIT LICENSE](./LICENSE)
 
-## Snippets
-
-### Astro / Starlight
+## Astro / Starlight
 
 - [Config Pattern for Javascript Projects](docs/astro/config-pattern.md)  
   Modularizes project configuration for clearer diffs.
@@ -17,16 +15,16 @@ A collection of small, practical snippets and guides.
 - [Hot reload WSL /mnt Polling Fix](docs/astro/wsl-mnt-polling-fix.md)  
   Enables reliable hot-reloading on *mnt* drives in WSL.
 
-### Windows
+## Windows
 
 - [Windows Development Setup](docs/windows/development-setup.md)  
   Recommendations with WSL, VSCode, and editor defaults for consistent development.
 
-### Git
+## Git
 
 - [Per Repository User](docs/git/per-repository-user.md)  
   Configure Git to use different user accounts per repository.
 
 ---
 
-> These specific use case snippets are provided under the more permissive [MIT LICENSE](./LICENSE) instead of the [GNU Affero General Public License v3](https://www.gnu.org/licenses/agpl-3.0.en.html) many of our projects use.
+> These snippets are MIT-licensed for easy reuse, even though many of our full projects are AGPLv3.
