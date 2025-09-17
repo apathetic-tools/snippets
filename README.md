@@ -29,4 +29,4 @@ A collection of small, practical snippets and guides.
 
 ---
 
-> Our project are generally licensed [GNU Affero General Public License v3](https://www.gnu.org/licenses/agpl-3.0.en.html), so these specific use case snippets are provided under the more permissive [MIT LICENSE](./LICENSE).
+> These specific use case snippets are provided under the more permissive [MIT LICENSE](./LICENSE) instead of the [GNU Affero General Public License v3](https://www.gnu.org/licenses/agpl-3.0.en.html) many of our projects use.
