@@ -1,0 +1,9 @@
+{
+  "recommendations": [
+    "editorconfig.editorconfig",
+    "ms-vscode-remote.remote-wsl",
+    "bierner.github-markdown-preview",
+    "esbenp.prettier-vscode"
+  ],
+  "unwantedRecommendations": []
+}
