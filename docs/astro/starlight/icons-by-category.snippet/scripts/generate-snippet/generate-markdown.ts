@@ -104,7 +104,7 @@ function generateTable(icons?: string[], markdownLines: string[] = []) {
 
 	// Table header
 	markdownLines.push('| ' + ' | '.repeat(iconsPerRow).trim() + ' |');
-	markdownLines.push('| ' + ' | '.repeat(iconsPerRow).replace(/ /g, '---') + ' |');
+	markdownLines.push('|:' + ' :|: '.repeat(iconsPerRow).replace(/ /g, '---') + ':|');
 
 	for (const row of rows) {
 		const paddedRow = [...row];
@@ -140,11 +140,9 @@ function generateTable(icons?: string[], markdownLines: string[] = []) {
 							let before = '';
 							let after = '';
 							if (info.desc) {
-								before += '&nbsp;&nbsp;&nbsp;&nbsp;';
 								after += ` <sup title="${info.desc}">ℹ</sup>`;
 							}
 							if (info.source) {
-								before += '&nbsp;&nbsp;&nbsp;&nbsp;';
 								after += ` <sup><a href="${info.source}">🔗</a></sup>`;
 							}
 
