@@ -155,8 +155,8 @@ indent_style = space
 
 > **Inspired by / Attribution:**  
 > This snippet was inspired by the following MIT-licensed sources:
-> - withastro/docs: https://github.com/withastro/docs/blob/main/.gitignore
-> - withastro/docs: https://github.com/withastro/docs/blob/main/.editorconfig  
-> - microsoft/vscode: https://github.com/microsoft/vscode/blob/main/.editorconfig
+> - withastro/docs: [.gitignore](https://github.com/withastro/docs/blob/main/.gitignore)
+> - withastro/docs: [.editorconfig](https://github.com/withastro/docs/blob/main/.editorconfig)
+> - microsoft/vscode: [.editorconfig](https://github.com/microsoft/vscode/blob/main/.editorconfig)
 >
 > ✨ *ChatGPT was used to help draft language, formatting, and code — plus we just love em dashes.*

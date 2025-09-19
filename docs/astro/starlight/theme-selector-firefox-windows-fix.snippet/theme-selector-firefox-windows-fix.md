@@ -112,6 +112,6 @@ To restrict the fix to Firefox on Windows (more brittle), wrap the rules:
 
 > **Inspired by / Attribution:**  
 > This snippet was inspired by the following MIT-licensed sources:
-> - withastro/docs: https://github.com/withastro/starlight/blob/main/packages/starlight/components/ThemeSelect.astro
+> - withastro/docs: [ThemeSelect.astro](https://github.com/withastro/starlight/blob/main/packages/starlight/components/ThemeSelect.astro)
 >
 > ✨ *ChatGPT was used to help draft language, formatting, and code — plus we just love em dashes.*

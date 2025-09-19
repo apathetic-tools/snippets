@@ -85,6 +85,6 @@ Then use the variables wherever needed in your project.
 
 > **Inspired by / Attribution:**  
 > This snippet was inspired by the following MIT-licensed sources:
-> - withastro/docs: https://github.com/withastro/docs/blob/main/astro.config.ts
+> - withastro/docs: [astro.config.ts](https://github.com/withastro/docs/blob/main/astro.config.ts)
 >
 > ✨ *ChatGPT was used to help draft language, formatting, and code — plus we just love em dashes.*
