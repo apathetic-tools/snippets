@@ -140,9 +140,11 @@ function generateTable(icons?: string[], markdownLines: string[] = []) {
 							let before = '';
 							let after = '';
 							if (info.desc) {
+								before += '&nbsp;&nbsp;&nbsp;&nbsp;';
 								after += ` <sup title="${info.desc}">ℹ</sup>`;
 							}
 							if (info.source) {
+								before += '&nbsp;&nbsp;&nbsp;&nbsp;';
 								after += ` <sup><a href="${info.source}">🔗</a></sup>`;
 							}
 
