@@ -27,7 +27,9 @@ We've highlighted some of our favourites here.
 
 ## Actions & Status
 
-✏️ Pencil / Edit, 🔍 Magnifying Glass / Search, 📝 Memo / Note, 🔄 Refresh / Repeat, 📌 Pin, 🔧 Wrench, 🛠️ Hammer & Wrench, 🔒 Lock, 🔓 Unlock, 🔑 Key / Access
+✏️ Pencil / Edit, 🔍 Magnifying Glass / Search, 📝 Memo / Note, 📌 Pin, 🔧 Wrench, 🛠️ Hammer & Wrench, 🔒 Lock, 🔓 Unlock, 🔑 Key / Access, 
+
+⏮️ Previous, ⏪ Rewind, ▶️ Play, ⏹️ Stop, , ⏭️ Next, 🔄 Refresh, 🔁 Repeat, 🔀 Shuffle
 
 ✅ Check / Success, ✔️ Heavy Check, ❌ Cross / Error, 👍 Thumbs Up / Approval, 👉 Point Right / Call-to-action, ⚠️ Warning, 🛑 Stop, ⚡ Lightning / Quick, 
 
