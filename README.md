@@ -31,3 +31,5 @@ A collection of small, practical snippets and guides.
 ---
 
 > These snippets are MIT-licensed for easy reuse, even though some of our full projects are AGPLv3.
+>
+> ✨ *ChatGPT was used to help outline language, formatting, and code — plus we just love em dashes.*

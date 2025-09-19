@@ -83,8 +83,8 @@ Then use the variables wherever needed in your project.
 
 ✅ This pattern helps make your configuration modular, readable, and easier to maintain as your Astro project grows.
 
----
-
 > **Inspired by / Attribution:**  
 > This snippet was inspired by the following MIT-licensed sources:
 > - withastro/docs: https://github.com/withastro/docs/blob/main/astro.config.ts
+>
+> ✨ *ChatGPT was used to help draft language, formatting, and code — plus we just love em dashes.*

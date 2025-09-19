@@ -30,3 +30,9 @@ If desired, you can also apply this globally for all repositories, but that may 
 ---
 
 ✅ With this, you can safely maintain multiple Git identities per repository.
+
+> **Inspired by / Attribution:**  
+> This snippet was inspired by the following sources:
+>   - Various *blog* and *forum* posts over the years
+>
+> ✨ *ChatGPT was used to help draft language, formatting, and code — plus we just love em dashes.*

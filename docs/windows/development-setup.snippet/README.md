@@ -158,3 +158,5 @@ indent_style = space
 > - withastro/docs: https://github.com/withastro/docs/blob/main/.gitignore
 > - withastro/docs: https://github.com/withastro/docs/blob/main/.editorconfig  
 > - microsoft/vscode: https://github.com/microsoft/vscode/blob/main/.editorconfig
+>
+> ✨ *ChatGPT was used to help draft language, formatting, and code — plus we just love em dashes.*

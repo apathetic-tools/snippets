@@ -52,5 +52,7 @@ export default defineConfig({
 
 > **Inspired by / Attribution:**  
 > This snippet was inspired by the following sources:
-- withastro/astro: https://github.com/withastro/astro/issues/6043#issuecomment-1409498718
-- microsoft/wsl: https://github.com/microsoft/WSL/issues/4739#issuecomment-2153546812
+> - withastro/astro: https://github.com/withastro/astro/issues/6043#issuecomment-1409498718
+> - microsoft/wsl: https://github.com/microsoft/WSL/issues/4739#issuecomment-2153546812
+>
+> ✨ *ChatGPT was used to help draft language, formatting, and code — plus we just love em dashes.*

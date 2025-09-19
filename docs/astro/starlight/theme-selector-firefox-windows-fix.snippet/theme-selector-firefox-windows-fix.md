@@ -110,8 +110,8 @@ To restrict the fix to Firefox on Windows (more brittle), wrap the rules:
 
 ✅ With this applied, the theme selector will be legible again in Firefox on Windows dark mode.
 
----
-
 > **Inspired by / Attribution:**  
 > This snippet was inspired by the following MIT-licensed sources:
 > - withastro/docs: https://github.com/withastro/starlight/blob/main/packages/starlight/components/ThemeSelect.astro
+>
+> ✨ *ChatGPT was used to help draft language, formatting, and code — plus we just love em dashes.*

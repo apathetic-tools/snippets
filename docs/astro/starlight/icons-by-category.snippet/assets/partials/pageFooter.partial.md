@@ -46,3 +46,5 @@ See our [UTF-8 Emoji Icon List Snippet](../../../../docs/utf8-emoji-icons-by-cat
 > - [withastro/starlight: Icon Reference](https://starlight.astro.build/reference/icons/)
 > - [withastro/starlight: Icons.ts](https://github.com/withastro/starlight/blob/main/packages/starlight/components/Icons.ts)
 > - [withastro/starlight: file-tree-icons.ts](https://github.com/withastro/starlight/blob/main/packages/starlight/user-components/file-tree-icons.ts)
+>
+> ✨ *ChatGPT was used to help draft language, formatting, and code — plus we just love em dashes.*
