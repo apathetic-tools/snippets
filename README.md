@@ -2,7 +2,7 @@
 
 A collection of small, practical snippets and guides.  
 
-**License:** [MIT LICENSE](./LICENSE)
+These snippets are by 😐 [Apathetic Tools](https://github.com/apathetic-tools) · [MIT License](./LICENSE)
 
 ## General
 
@@ -32,6 +32,11 @@ A collection of small, practical snippets and guides.
 
 - [Per Repository User](docs/git/per-repository-user.snippet/README.md)  
   Configure Git to use different user accounts per repository.
+
+## Github
+
+- [Github Pages Deployments](docs/github/github-pages-deploy.snippet/README.md)  
+  Deploy from any repo to any repo or server using Github Pages and custom deploy tasks.
 
 ---
 
