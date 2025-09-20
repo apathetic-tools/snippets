@@ -5,6 +5,10 @@
 # - https://maxschmitt.me/posts/github-actions-ssh-key
 # - tschaub/gh-pages https://github.com/tschaub/gh-pages
 
+#########################################################
+## !!! BROKEN EXAMPLE — Draft starting point only !!! ##
+#########################################################
+
 name: Deploy to GitHub Pages
 
 on:
