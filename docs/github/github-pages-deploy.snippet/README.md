@@ -116,7 +116,14 @@ Documentation:
 - [peaceiris/actions-gh-pages](https://github.com/marketplace/actions/github-pages-action) with SSH keys
 
 **Pros:**
-- Single action that does everything
+- Single action that does everything (checkout → commit → push)
+- GitHub Actions–native: built-in support for deploy_key, external_repository, Jekyll toggle, etc.
+- Fewer moving parts → less chance of config errors
+- Great default behavior for common GitHub Pages use cases
+
+**Cons:**
+- Opinionated defaults — less flexible if you need unusual workflows
+- GitHub Actions only (not portable to other CI/CD)
 
 Here’s an example working `.github/workflows/deploy.yml`:
 ```yml
@@ -185,13 +192,16 @@ Documentation:
 - [tschaub/gh-pages)](https://github.com/tschaub/gh-pages?tab=readme-ov-file#github-pages-project-sites)
 - [webfactory/ssh-agent](https://github.com/marketplace/actions/webfactory-ssh-agent)
 
+
 **Pros:**
-- Configuration options may fit your use case better
-- Alternative to *peaceiris/actions-gh-pages*
+- CLI tool that can run anywhere (local scripts, other CI/CD, not just GitHub Actions)
+- More granular control over deployment flow (what to publish, when, and how)
+- Long track record outside of Actions
 
 **Cons:**
-- Multiple 3rd party actions
-- More opportunities for configuration problems
+- Requires stitching multiple 3rd-party actions together
+- More moving parts → more opportunities for configuration and debugging headaches
+- Steeper learning curve than peaceiris
 
 See our [example working workflow](assets/examples/deploy-tschaub-webfactory.yml).
 
@@ -201,25 +211,28 @@ There is some troubleshooting steps in there to help you as you get things worki
 
 #### Alternative: tschaub/gh-pages + manual SSH configuration (Not Recommended)
 
+⚠️ We cannot recommend this approach. Use only if you have a very specific reason and are prepared for extensive troubleshooting.
+
 Documentation: 
 - [tschaub/gh-pages](https://github.com/tschaub/gh-pages?tab=readme-ov-file#github-pages-project-sites)
-- Blog ["github-actions-ssh-key"](https://maxschmitt.me/posts/github-actions-ssh-key) by Max Schmitt
+- [Max Schmitt Github Actions SSH Key blog post](https://maxschmitt.me/posts/github-actions-ssh-key) by Max Schmitt
 
 **Pros:**
-- Do not handoff SSH keys to 3rd party actions
+- Maximum control — no reliance on 3rd-party actions to manage SSH
+- Does not handoff SSH keys to 3rd party actions or programs
+- Useful if you want to understand the internals of how deploys work
 - Alternative to *webfactory/ssh-agent*
 
 **Cons:**
-- No working example
-- Brittle and error prone
+- Very brittle and error-prone in GitHub Actions
+- Difficult to get SSH agent working reliably (`$SSH_AUTH_SOCK` issues, agent propagation)
+- No working example in this guide — we couldn’t get it stable despite extensive attempts
 
-Despite many hours spent trying to get it working, we were not successful with this method, and so **cannot recommend** it. We cannot provide any help in getting it working. 
+In our attempts, `$SSH_AUTH_SOCK` never propagated correctly. The blog post uses `SSH_AUTH_SOCK: /tmp/ssh_agent.sock` and `ssh-agent -a $SSH_AUTH_SOCK` so you may have more luck going back to that.
 
-Forum posts are full of people with similar troubles. In the end we could never `$SSH_AUTH_SOCK` to properly propagate between the steps, so SSH never worked. The steps were very brittle and error prone, as well as being difficult to troubleshoot.
+Nevertheless, see our [broken example draft workflow](assets/examples/deploy-tschaub-manual.yml) to get you started.
 
-Nevertheless, see our [example broken draft workflow](assets/examples/deploy-tschaub-manual.yml) to get you started.
-
-Lots of troubleshooting code in there. It took a long time to get the ssh keys to be valid, but then the ssh-agent clearly wasn't being used by SSH/git to authenticate to github. The blog post uses `SSH_AUTH_SOCK: /tmp/ssh_agent.sock` and `ssh-agent -a $SSH_AUTH_SOCK` so maybe go back to that instead of letting it get defined. If you figure it out please let us know.
+If you figure it out please let us know.
 
 ## Troubleshooting
 
