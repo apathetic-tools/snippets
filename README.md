@@ -4,6 +4,8 @@ A collection of small, practical snippets and guides.
 
 **License:** [MIT LICENSE](./LICENSE)
 
+## General
+
 - [UTF-8 Emoji Icons by Category](docs/utf8-emoji-icons-by-category.snippet/)  
   Quickly find the perfect text-icon for your writting.
 
