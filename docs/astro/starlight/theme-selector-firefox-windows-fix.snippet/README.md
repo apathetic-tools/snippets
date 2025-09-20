@@ -2,7 +2,7 @@
 
 Fix theme selector menu rendering issues in **Firefox on Windows** when using dark mode with [Starlight](https://starlight.astro.build/).
 
-This [snippet](https://github.com/apathetic-tools/snippets) is by [Apathetic Tools](https://github.com/apathetic-tools) · [MIT License](../../../LICENSE).
+This [snippet](https://github.com/apathetic-tools/snippets) is by 😐 [Apathetic Tools](https://github.com/apathetic-tools) · [MIT License](../../../LICENSE).
 
 
 ## Problem

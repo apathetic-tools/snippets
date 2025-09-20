@@ -2,7 +2,7 @@
 
 Organize your [Astro](https://astro.build/) (or other framework) configuration files into a `config/` folder for cleaner diffs, easier readability, and better project structure.
 
-This [snippet](https://github.com/apathetic-tools/snippets) is by [Apathetic Tools](https://github.com/apathetic-tools) · [MIT License](../../LICENSE).
+This [snippet](https://github.com/apathetic-tools/snippets) is by 😐 [Apathetic Tools](https://github.com/apathetic-tools) · [MIT License](../../LICENSE).
 
 ## Why Use This Pattern?
 
@@ -54,7 +54,7 @@ export const siteUrl = process.env.APP_SITE_URL ?? site + base;
 
 ```ts
 // Config Pattern for Astro. Inspired by Apathetic-Tools · MIT
-// https://github.com/apathetic-tools/snippets/blob/main/docs/astro/config-pattern.md
+// https://github.com/apathetic-tools/snippets/blob/main/docs/astro/config-pattern.snippet/
 export * from './header';
 export * from './hosting';
 export * from './social';

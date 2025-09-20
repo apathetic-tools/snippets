@@ -1,6 +1,6 @@
 # Windows Development Setup
 
-This [snippet](https://github.com/apathetic-tools/snippets) is by [Apathetic Tools](https://github.com/apathetic-tools) · [MIT License](../../LICENSE).
+This [snippet](https://github.com/apathetic-tools/snippets) is by 😐 [Apathetic Tools](https://github.com/apathetic-tools) · [MIT License](../../LICENSE).
 
 ## The Paved Road
 
@@ -60,7 +60,7 @@ Create a workspace file (`workspace.code-workspace`) to allow opening a project 
 Recommended *partial* `.gitignore` for a Windows + WSL project:
 ```gitignore
 # Inspired by Apathetic-Tools · MIT
-# https://github.com/apathetic-tools/snippets/blob/main/docs/windows/development-setup.md
+# https://github.com/apathetic-tools/snippets/blob/main/docs/windows/development-setup.snippet/
 
 # build output
 dist/
@@ -127,7 +127,7 @@ Provide consistent editor defaults using `.editorconfig`:
 # EditorConfig is awesome: https://EditorConfig.org
 
 # derived from Apathetic-Tools · MIT
-# https://github.com/apathetic-tools/snippets/blob/main/docs/windows/development-setup.md
+# https://github.com/apathetic-tools/snippets/blob/main/docs/windows/development-setup.snippet/
 
 # top-most EditorConfig file
 root = true

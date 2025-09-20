@@ -2,7 +2,7 @@
 
 🖌️ Quickly find the perfect icon for your messages and pages.
 
-This [snippet](https://github.com/apathetic-tools/snippets) *(but not the icons)* is by [Apathetic Tools](https://github.com/apathetic-tools) · [MIT License](../../LICENSE).
+This [snippet](https://github.com/apathetic-tools/snippets) *(but not the icons)* is by 😐 [Apathetic Tools](https://github.com/apathetic-tools) · [MIT License](../../LICENSE).
 
 ## 😎 Using UTF-8 Emoji as Icons
 
