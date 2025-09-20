@@ -19,29 +19,41 @@ We've highlighted some of our favourites here.
 
 ## Navigation & Arrows
 
-🏠 Home, 🌐 Globe / Web, ☰ Hamburger / Menu, 📍 Round Pin / Location, 👤 Profile, 👥 Two Users / Community, ⚙️ Settings
+🏠 Home, 🌐 Globe / Web, ☰ Hamburger / Menu, 📍 Round Pin / Location, 👤 Profile, 👥 Two Users / Community, ⚙️ Settings, 🏢 Organization
+
+⌂ House, ⚙ Settings, ◎ Pin, ≡ Sm Hamburger
 
 ⬆️ Up, ⬇️ Down, ⬅️ Left, ➡️ Right, ↗️ Up-Right, ↘️ Down-Right, ↖️ Up-Left, ↙️ Down-Left, 🔼 Triangle Up, 🔽 Triangle Down
 
-↑ Up, ↓ Down, ← Left, → Right, ↗ Up-Right, ↘ Down-Right, ↖ Up-Left, ↙ Down-Left, ▲ Triangle Up, ▼ Triangle Down
+↑ Up, ↓ Down, ← Left, → Right, ↗ Up-Right, ↘ Down-Right, ↖ Up-Left, ↙ Down-Left, ↕ Up-Down, ↔ Left-Right, ▲ / △ Triangle Up, ▼ / ▽ Triangle Down, ◀ / ◁ / ❮ Left Arrow, ▶ / ▷ / ❯ / ➤ Right Arrow
 
 ## Actions & Status
 
-✏️ Pencil / Edit, 🔍 Magnifying Glass / Search, 📝 Memo / Note, 📌 Pin, 🔧 Wrench, 🛠️ Hammer & Wrench, 🔒 Lock, 🔓 Unlock, 🔑 Key / Access, 
+✏️ Pencil / Edit, 🔍 Magnifying Glass / Search, 🔎 Magnifying Glass Right 📝 Memo / Note, 📌 Pin, 🔧 Wrench, 🛠️ Hammer & Wrench, 🔒 Lock, 🔓 Unlock, 🔑 Key / Access, ⌛ Hourglass, 
+
+✎ Pencil, 🖹 Document, 🗝 Old Key, 🛠 / ⚒ Hammer, ⧖ Hourglass
 
 ⏮️ Previous, ⏪ Rewind, ▶️ Play, ⏹️ Stop, , ⏭️ Next, 🔄 Refresh, 🔁 Repeat, 🔀 Shuffle
 
-✅ Check / Success, ✔️ Heavy Check, ❌ Cross / Error, 👍 Thumbs Up / Approval, 👉 Point Right / Call-to-action, ⚠️ Warning, 🛑 Stop, ⚡ Lightning / Quick, 
+⏮ Previous, ⏴Sm Previous, ▶ Play, ⏹ Stop, ⏵ Sm Next, ⏭ Next, ⟳ Repeat, ⇄ Shuffle
+
+✅ Check / Success, ✔️ Heavy Check, ❌ Cross / Error, 👍 Thumbs Up / Approval, 👉 Point Right / Call-to-action, 👆 Point Up, ⚠️ Warning, 🛑 Stop, ⚡ Lightning / Quick, 
+
+☐ Empty checkbox, ☒ / ▣ Checkbox, ✓ Check Mark, ✗ Diag Cross, ✖ / X Cross, ◯ / ◎ Empty Circle, ◉ Checked Circle, ⚠ Warning , ⬛ / ■ Stop
 
 ## Shapes & Indicators
 
-ℹ️ Info, ⭐ Star, ✨ Sparkles, 💡 Light Bulb, 🔥 Fire / Hot, 🟢 Green Circle, 🟡 Yellow Circle, 🔴 Red Circle, 🔵 Blue Circle, ⚪ White Circle, ⚫ Black Circle, 🟠 Orange Circle, 🟣 Purple Circle, ⚖️ Scales / Rules, 🖌️ Paintbrush / Design
+ℹ️ Info, ❗Alert, ⭐ Star, ✨ Sparkles, 💡 Light Bulb, 🔥 Fire / Hot, 🟢 Green Circle, 🟡 Yellow Circle, 🔴 Red Circle, 🔵 Blue Circle, ⚪ White Circle, ⚫ Black Circle, 🟠 Orange Circle, 🟣 Purple Circle, ⚖️ Scales / Rules, 🖌️ Paintbrush / Design, 🧪 Test Tube / Labs
+
+ℹ Info, ★ Star, ☆ Empty Star, ✚ Heavy Plus, ✦ Four-Pointed Star, ✧ Empty Four-Pointed Star, ○ Small Circle, ⚖ Scales, 🖌 Paintbrush, ≈ Aproximately, ± Plus-Minus, ∞ Infinity, ⚛ Atom
 
 ## Communication & Social
 
-💬 Speech Bubble, 🗨️ Left Speech Bubble, 📧 Email, 📞 Phone, 📨 Incoming Envelope, 📩 Outgoing Envelope, 🆘 SOS / Alert, 📣 Megaphone / Announcement
+💬 Speech Bubble, 🗨️ Left Speech Bubble, 📧 Email, 📞 Phone, 📨 Incoming Envelope, 📩 Outgoing Envelope, 🆘 SOS / Alert, 📣 / 📢 Megaphone / Announcement, 
 
-👋 Wave, 🤝 Handshake, 🙋 Hand Raise, 👏 Clapping
+☎ Phone, ✉ Envelope
+
+👋 Wave, 🙌 Raise, 🤝 Handshake, 🙋 Hand Raise, 👏 Clapping, ✍ Writting, ✋ Stop
 
 ## Files & Documents
 
@@ -51,15 +63,19 @@ We've highlighted some of our favourites here.
 
 🎵 Music / Audio, 🎶 Musical Notes, 🎥 Video / Camera, 🎬 Clapperboard, 🖼️ Picture / Image, 📷 Camera
 
+♬ / ♪ / ♩ Music, 🖼 Picture
+
 ## Tech & Tools
 
-🖥️ Desktop Computer, 💻 Laptop, 🖱️ Mouse, ⌨️ Keyboard, 🖨️ Printer, 📡 Satellite / WiFi, 📟 Pager, 🧮 Abacus
+🖥️ Desktop Computer, 💻 Laptop, 🖱️ Mouse, ⌨️ Keyboard, 🖨️ Printer, 📡 Satellite / WiFi, 📟 Pager, 🧮 Abacus, 🔊 Speaker, ⌚ Watch
+
+🖥 Desktop, 🖱 Mouse, ⌨ Keyboard
 
 ## Fun & Misc
 
-🚀 Rocket / Launch, 🏆 Trophy, 🎯 Target, 🧩 Puzzle, ❤️ Heart / Favorite, 💔 Broken Heart, 🌙 Moon, ☀️ Sun, 🌟 Glowing Star, 🎉 Party / Celebration, 🎁 Gift, 😎 Sunglasses, 🥳 Party Face
+🚀 Rocket / Launch, 🏆 Trophy, 🎯 Target, 🧩 Puzzle, ❤️ Heart / Favorite, 💔 Broken Heart, 🌙 Moon, ☀️ Sun, 🌟 Glowing Star, 🎉 Party / Celebration, 🎁 Gift, 😎 Sunglasses, 🥳 Party Face, 😐 Apathy, 🦥 Sloth
 
-
+⚝ Empty 5-Point Star, ♥ / ♡ Heart, ☾ Moon, ☀ Sun
 ---
 
 🎉 With these options, your site will be visually polished in no time!
