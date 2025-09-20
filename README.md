@@ -4,7 +4,7 @@ A collection of small, practical snippets and guides.
 
 **License:** [MIT LICENSE](./LICENSE)
 
-- [utf-8 Emoji Icons by Category](docs/utf8-emoji-icons-by-category.snippet/)  
+- [UTF-8 Emoji Icons by Category](docs/utf8-emoji-icons-by-category.snippet/)  
   Quickly find the perfect text-icon for your writting.
 
 ## Astro / Starlight
@@ -18,7 +18,7 @@ A collection of small, practical snippets and guides.
 - [Dark Mode Theme Selector Fix for Starlight on Firefox on Windows](docs/astro/starlight/theme-selector-firefox-windows-fix.snippet/)  
   Makes dark mode theme options legible in Firefox.
 
-- [Icons by Category reference for use in Starlight](docs/astro/starlight/icons-by-category.snippet/)  
+- [SVG Icons by Category reference for use in Starlight](docs/astro/starlight/icons-by-category.snippet/)  
   Quickly find the perfect icon for your Astro Starlight components.
 
 ## Windows
