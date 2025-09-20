@@ -34,7 +34,7 @@ export default defineConfig({
         server: {
             watch: {
                 // Workaround for WSL + /mnt/ watch issues (prefer WSL fs instead). Inspired by Apathetic-Tools · MIT
-                // https://github.com/apathetic-tools/snippets/blob/main/docs/astro/wsl-mnt-polling-fix.md
+                // https://github.com/apathetic-tools/snippets/blob/main/docs/astro/wsl-mnt-polling-fix.snippet/
                 // https://github.com/withastro/astro/issues/6043#issuecomment-1409498718
                 // https://github.com/microsoft/WSL/issues/4739#issuecomment-2153546812
                 ...((isWsl && process.cwd().startsWith('/mnt'))
