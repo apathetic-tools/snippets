@@ -1,5 +1,7 @@
 # Starlight Icons by Category ✨
 
+[//]: # (Note: This /README.md is auto-generated. Do not edit manually; see CONTRIBUTING.md.)
+
 🖌️ Quickly find the perfect icon for your Astro Starlight components.
 
 This [snippet](https://github.com/apathetic-tools/snippets) *(but not the icons)* is by 😐 [Apathetic Tools](https://github.com/apathetic-tools) · [MIT License](../../../../LICENSE).
@@ -264,11 +266,13 @@ The [Starlight Markdown Blocks](https://delucis.github.io/starlight-markdown-blo
 - ✅ Emoji can stand in for icons in markdown or *Starlight Markdown Blocks* Asides
 - ⚠️ Appearance may differ across platforms; use SVGs for a **consistent look**  
 
-See our [UTF-8 Emoji Icons by Category](../../../../docs/utf8-emoji-icons-by-category/README.md) for inspiration.
+See our [UTF-8 Emoji Icons by Category](../../../../docs/text/utf8-emoji-icons-by-category/README.md) for inspiration.
 
 ---
 
 🎉 With these options, your site will be visually polished in no time!
+
+Note: Part of this snippet is auto-generated. Refer to [CONTRIBUTING.md](./CONTRIBUTING.md) to make updates.
 
 > **Inspired by / Attribution:**  
 > This snippet was inspired by the following MIT-licensed sources:

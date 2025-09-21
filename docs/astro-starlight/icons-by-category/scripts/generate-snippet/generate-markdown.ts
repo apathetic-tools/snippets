@@ -162,7 +162,11 @@ function generateTable(icons?: string[], markdownLines: string[] = []) {
 }
 
 // Recursive processing of groups/subgroups
-function processGroup(group: IconGroup, markdownLines: string[] = [], headerLevel = iconGroupStartLevel) {
+function processGroup(
+	group: IconGroup,
+	markdownLines: string[] = [],
+	headerLevel = iconGroupStartLevel
+) {
 	if (!group || !group.group) return;
 
 	markdownLines.push(`${'#'.repeat(headerLevel)} ${group.group || 'Unnamed Group'}\n`);
@@ -173,7 +177,7 @@ function processGroup(group: IconGroup, markdownLines: string[] = [], headerLeve
 	if (group.icons?.length) generateTable(group.icons, markdownLines);
 
 	if (group.subgroups?.length) {
-		for (const subgroup of group.subgroups) {			
+		for (const subgroup of group.subgroups) {
 			processGroup(subgroup, markdownLines, headerLevel + 1);
 		}
 	}

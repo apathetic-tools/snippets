@@ -8,7 +8,7 @@
   },
   "license": "MIT",
   "scripts": {
-    "rebuild": "pnpm run clean && pnpm run fullbuild",
+    "rebuild": "pnpm run clean && pnpm run fetch+build",
     "fetch+build": "pnpm run fetch && pnpm run build",
     "build": "pnpm run save && pnpm run generate",
     "fetch": "tsx fetch-icons.ts",
