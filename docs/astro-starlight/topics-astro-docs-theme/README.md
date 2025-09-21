@@ -534,7 +534,7 @@ Either approach will give your site a polished, consistent look while letting yo
 
 **Enjoy your new look!**
 
-![Astro Docs group theme](assets/docs-astro-build-sidebar-group-theme.png)
+![Astro Docs group theme](assets/starlight-sidebar-topics-astro-docs-theme.png.png)
 
 ---
 
