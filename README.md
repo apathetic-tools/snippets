@@ -14,6 +14,9 @@ These snippets are by 😐 [Apathetic Tools](https://github.com/apathetic-tools)
 
 ## Astro-Starlight
 
+- [Theming Starlight Sidebar Topics as Astro Docs](docs/astro-starlight/topics-astro-docs-theme/README.md)  
+  Transform your Starlight sidebar topics to match the polished sidebar style of Astro Docs.
+
 - [Dark Mode Theme Selector Fix for Starlight on Firefox on Windows](docs/astro-starlight/theme-selector-firefox-windows-fix/README.md)  
   Makes dark mode theme options legible in Firefox.
 
@@ -33,7 +36,7 @@ These snippets are by 😐 [Apathetic Tools](https://github.com/apathetic-tools)
 ## Text
 
 - [UTF-8 Emoji Icons by Category](docs/text/utf8-emoji-icons-by-category/README.md)  
-  Quickly find the perfect text-icon for your writting.
+  Quickly find the perfect text-icon for your writing.
 
 ## Windows
 
