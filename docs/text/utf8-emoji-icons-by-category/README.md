@@ -16,7 +16,7 @@ We've highlighted some of our favourites here.
 
 ## What are some alternatives?
 
-> 🔍 See our [Astro Starlight Icons by Category Snippet](../../docs/astro/starlight/icons-by-category.snippet/README.md) for inspiration when using that framework for even more options including SVG icons.
+> 🔍 See our [Astro Starlight Icons by Category Snippet](../../docs/astro-starlight/icons-by-category/README.md) for inspiration when using that framework for even more options including SVG icons.
 
 ## Navigation & Arrows
 

@@ -264,7 +264,7 @@ The [Starlight Markdown Blocks](https://delucis.github.io/starlight-markdown-blo
 - ✅ Emoji can stand in for icons in markdown or *Starlight Markdown Blocks* Asides
 - ⚠️ Appearance may differ across platforms; use SVGs for a **consistent look**  
 
-See our [UTF-8 Emoji Icons by Category](../../../../docs/utf8-emoji-icons-by-category.snippet/README.md) for inspiration.
+See our [UTF-8 Emoji Icons by Category](../../../../docs/utf8-emoji-icons-by-category/README.md) for inspiration.
 
 ---
 

@@ -130,7 +130,7 @@ Here’s an example working `.github/workflows/deploy.yml`:
 # Deploy across repos or servers
 # - Using peaceiris/actions-gh-pages with SSH
 # Deploy inspired by Apathetic-Tools · MIT
-# - https://github.com/apathetic-tools/snippets/blob/main/docs/github/github-pages-deploy.snippet/
+# - https://github.com/apathetic-tools/snippets/blob/main/docs/github/github-pages-deploy
 # - peaceiris/actions-gh-pages https://github.com/marketplace/actions/github-pages-action
 
 name: Deploy to GitHub Pages

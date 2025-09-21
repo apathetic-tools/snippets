@@ -1,7 +1,7 @@
 # Pushing from one repo to another repo or server 
 #  - using tschaub/gh-pages with webfactory/ssh-agent
 # Deploy inspired by Apathetic-Tools · MIT
-# - https://github.com/apathetic-tools/snippets/blob/main/docs/github/github-pages-deploy.snippet/
+# - https://github.com/apathetic-tools/snippets/blob/main/docs/github/github-pages-deploy
 # - webfactory/ssh-agent https://github.com/marketplace/actions/webfactory-ssh-agent
 # - tschaub/gh-pages https://github.com/tschaub/gh-pages
 

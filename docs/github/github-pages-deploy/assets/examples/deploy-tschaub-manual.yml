@@ -1,7 +1,7 @@
 # Pushing from one repo to another repo or server 
 #  - using tschaub/gh-pages with manual SSH configuration
 # Deploy inspired by Apathetic-Tools · MIT
-# - https://github.com/apathetic-tools/snippets/blob/main/docs/github/github-pages-deploy.snippet/
+# - https://github.com/apathetic-tools/snippets/blob/main/docs/github/github-pages-deploy
 # - https://maxschmitt.me/posts/github-actions-ssh-key
 # - tschaub/gh-pages https://github.com/tschaub/gh-pages
 

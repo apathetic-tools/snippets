@@ -2,7 +2,7 @@
 
 Fix hot-reloading issues in Astro projects under WSL when working from the Windows-mounted `/mnt` filesystem.
 
-This [snippet](https://github.com/apathetic-tools/snippets/docs) is by 😐 [Apathetic Tools](https://github.com/apathetic-tools) · [MIT License](../../LICENSE).
+This [snippet](https://github.com/apathetic-tools/snippets) is by 😐 [Apathetic Tools](https://github.com/apathetic-tools) · [MIT License](../../LICENSE).
 
 When using the [Windows Subsystem for Linux (WSL)](https://learn.microsoft.com/en-us/windows/wsl/install) with the [Astro web framework](https://astro.build/), hot reloading may fail if your project is stored on the Windows filesystem (`/mnt/...`) instead of the WSL filesystem. 
 You’ll typically notice this when running `pnpm run dev`.
@@ -34,7 +34,7 @@ export default defineConfig({
         server: {
             watch: {
                 // Workaround for WSL + /mnt/ watch issues (prefer WSL fs instead). Inspired by Apathetic-Tools · MIT
-                // https://github.com/apathetic-tools/snippets/blob/main/docs/astro/wsl-mnt-polling-fix.snippet/
+                // https://github.com/apathetic-tools/snippets/blob/main/docs/astro/wsl-mnt-polling-fix
                 // https://github.com/withastro/astro/issues/6043#issuecomment-1409498718
                 // https://github.com/microsoft/WSL/issues/4739#issuecomment-2153546812
                 ...((isWsl && process.cwd().startsWith('/mnt'))

@@ -54,7 +54,7 @@ export const siteUrl = process.env.APP_SITE_URL ?? site + base;
 
 ```ts
 // Config Pattern for Astro. Inspired by Apathetic-Tools · MIT
-// https://github.com/apathetic-tools/snippets/blob/main/docs/astro/config-pattern.snippet/
+// https://github.com/apathetic-tools/snippets/blob/main/docs/astro/config-pattern
 export * from './header';
 export * from './hosting';
 export * from './social';

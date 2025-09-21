@@ -66,7 +66,7 @@ If you don't use Tailwind, simply import `./theme-menu-layer.css` from your `glo
 /* 
  * Fix: Dark mode theme selector menu in Firefox on Windows
  * Inspired by Apathetic-Tools · MIT
- * https://github.com/apathetic-tools/snippets/blob/main/docs/astro/starlight/theme-selector-firefox-windows-fix.snippet/
+ * https://github.com/apathetic-tools/snippets/blob/main/docs/astro-starlight/theme-selector-firefox-windows-fix
  * Ref: https://github.com/withastro/starlight/blob/main/packages/starlight/components/ThemeSelect.astro
  */
 @layer our-theme-menu {

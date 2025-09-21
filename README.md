@@ -4,39 +4,41 @@ A collection of small, practical snippets and guides.
 
 These snippets are by 😐 [Apathetic Tools](https://github.com/apathetic-tools) · [MIT License](./LICENSE)
 
-## General
+## Astro
 
-- [UTF-8 Emoji Icons by Category](docs/utf8-emoji-icons-by-category.snippet/README.md)  
-  Quickly find the perfect text-icon for your writting.
-
-## Astro / Starlight
-
-- [Config Pattern for Javascript Projects](docs/astro/config-pattern.snippet/README.md)  
+- [Config Pattern for Javascript Projects](docs/astro/config-pattern/README.md)  
   Modularizes project configuration for clearer diffs.
 
-- [Hot reload WSL /mnt Polling Fix](docs/astro/wsl-mnt-polling-fix.snippet/README.md)  
+- [Hot reload WSL /mnt Polling Fix](docs/astro/wsl-mnt-polling-fix/README.md)  
   Enables reliable hot-reloading on *mnt* drives in WSL.
 
-- [Dark Mode Theme Selector Fix for Starlight on Firefox on Windows](docs/astro/starlight/theme-selector-firefox-windows-fix.snippet/README.md)  
+## Astro-Starlight
+
+- [Dark Mode Theme Selector Fix for Starlight on Firefox on Windows](docs/astro-starlight/theme-selector-firefox-windows-fix/README.md)  
   Makes dark mode theme options legible in Firefox.
 
-- [SVG Icons by Category reference for use in Starlight](docs/astro/starlight/icons-by-category.snippet/README.md)  
+- [SVG Icons by Category reference for use in Starlight](docs/astro-starlight/icons-by-category/README.md)  
   Quickly find the perfect icon for your Astro Starlight components.
 
 ## Windows
 
-- [Windows Development Setup](docs/windows/development-setup.snippet/README.md)  
+- [Windows Development Setup](docs/windows/development-setup/README.md)  
   Recommendations with WSL, VSCode, and editor defaults for consistent development.
 
 ## Git
 
-- [Per Repository User](docs/git/per-repository-user.snippet/README.md)  
+- [Per Repository User](docs/git/per-repository-user/README.md)  
   Configure Git to use different user accounts per repository.
 
 ## Github
 
-- [Github Pages Deployments](docs/github/github-pages-deploy.snippet/README.md)  
+- [Github Pages Deployments](docs/github/github-pages-deploy/README.md)  
   Deploy from any repo to any repo or server using Github Pages and custom deploy tasks.
+
+## Text
+
+- [UTF-8 Emoji Icons by Category](docs/text/utf8-emoji-icons-by-category/README.md)  
+  Quickly find the perfect text-icon for your writting.
 
 ---
 
