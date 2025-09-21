@@ -2,7 +2,7 @@
 
 Deploy from any repo to any repo or server using Github Pages and custom deploy tasks.
 
-This [snippet](https://github.com/apathetic-tools/snippets) is by 😐 [Apathetic Tools](https://github.com/apathetic-tools) · [MIT License](../../LICENSE).
+This [snippet](https://github.com/apathetic-tools/snippets) was created by 😐 [Apathetic Tools](https://github.com/apathetic-tools) · [MIT License](../../LICENSE).
 
 ## Setup dummy repos for testing
 
@@ -129,7 +129,7 @@ Here’s an example working `.github/workflows/deploy.yml`:
 ```yml
 # Deploy across repos or servers
 # - Using peaceiris/actions-gh-pages with SSH
-# Deploy inspired by Apathetic-Tools · MIT
+# Deploy inspired by Apathetic Tools · MIT
 # - https://github.com/apathetic-tools/snippets/blob/main/docs/github/github-pages-deploy
 # - peaceiris/actions-gh-pages https://github.com/marketplace/actions/github-pages-action
 

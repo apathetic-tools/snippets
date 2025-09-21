@@ -2,7 +2,7 @@
 
 Fix theme selector menu rendering issues in **Firefox on Windows** when using dark mode with [Starlight](https://starlight.astro.build/).
 
-This [snippet](https://github.com/apathetic-tools/snippets) is by 😐 [Apathetic Tools](https://github.com/apathetic-tools) · [MIT License](../../../LICENSE).
+This [snippet](https://github.com/apathetic-tools/snippets) was created by 😐 [Apathetic Tools](https://github.com/apathetic-tools) · [MIT License](../../../LICENSE).
 
 
 ## Problem
@@ -65,7 +65,7 @@ If you don't use Tailwind, simply import `./theme-menu-layer.css` from your `glo
 ```css
 /* 
  * Fix: Dark mode theme selector menu in Firefox on Windows
- * Inspired by Apathetic-Tools · MIT
+ * Inspired by Apathetic Tools · MIT
  * https://github.com/apathetic-tools/snippets/blob/main/docs/astro-starlight/theme-selector-firefox-windows-fix
  * Ref: https://github.com/withastro/starlight/blob/main/packages/starlight/components/ThemeSelect.astro
  */
