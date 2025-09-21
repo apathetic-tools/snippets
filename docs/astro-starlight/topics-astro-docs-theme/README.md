@@ -538,10 +538,6 @@ Either approach will give your site a polished, consistent look while letting yo
 
 ---
 
-> **Footnotes:**  
-> [^1]: [issue #24: theming using custom CSS](https://github.com/HiDeoo/starlight-sidebar-topics/issues/24#issuecomment-2720839854)  
-> [^2]: [issue #38: theming using custom components](https://github.com/HiDeoo/starlight-sidebar-topics/issues/38#issuecomment-3303567297)
-
 > **Inspired by / Attribution:**  
 > - [withastro/docs website](https://docs.astro.build/)
 >   - [Custom CSS styles](https://starlight.astro.build/guides/css-and-tailwind/#custom-css-styles)
@@ -559,3 +555,6 @@ Either approach will give your site a polished, consistent look while letting yo
 >   - [issue #38: theming using custom components](https://github.com/HiDeoo/starlight-sidebar-topics/issues/38#issuecomment-3303567297)
 >
 > ✨ *ChatGPT was used to help draft language, formatting, and code — plus we just love em dashes.*
+
+[^1]: [issue #24: theming using custom CSS](https://github.com/HiDeoo/starlight-sidebar-topics/issues/24#issuecomment-2720839854)  
+[^2]: [issue #38: theming using custom components](https://github.com/HiDeoo/starlight-sidebar-topics/issues/38#issuecomment-3303567297)
