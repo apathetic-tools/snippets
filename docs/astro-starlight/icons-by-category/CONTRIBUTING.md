@@ -58,7 +58,8 @@ pnpm run fetch
 
 ## Save icons into `/assets/icons`
 
-Note: You must run `clean` to remove unused icons from the folder first.
+> [!TIP]  
+> You must run `clean` to remove unused icons from the folder first.
 
 ```bash
 pnpm run save

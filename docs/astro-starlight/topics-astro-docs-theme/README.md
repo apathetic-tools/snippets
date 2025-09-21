@@ -267,7 +267,7 @@ You’re done with the CSS-only approach.
 
 This method is ideal when you need control over both styling and functionality, or want to merge features from multiple integrations. By taking ownership of upstream components, you isolate yourself from upstream changes — but this also increases your maintenance burden.
 
-> [!WARNING]
+> [!WARNING]  
 > This approach duplicates large portions of *starlight-sidebar-topics* into your repo. If the integration changes upstream, you’ll need to manually update your copies.
 
 We’ll recreate **starlight-sidebar-topics’** sidebar components step by step until we reach the `Topics.astro` component where the inline styles live. That’s where we’ll inject our theme.
@@ -518,7 +518,7 @@ Append the following styles after the <ul> block. These are adapted from Astro D
 </style>
 ```
 
-> ![NOTE]
+> ![TIP]
 > If styles conflict in the future, consider renaming the class prefix (e.g. `my-sidebar-topics`) to isolate this component.
 
 🎉 At this point your site’s topics should match the **Astro Docs theme**, and you're done with the component-override approach!

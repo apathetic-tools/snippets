@@ -18,7 +18,8 @@ The [Astro Icons](https://www.astroicon.dev/) integration lets you:
 - 🏠 Use local custom icons  
 - 🌐 Any icon from [Iconify Icon Sets](https://icon-sets.iconify.design/) or [Icônes](https://icones.js.org/)  
 
-> ⚠️ Note: These icons **won’t automatically work** with built-in Starlight components. Use them in your own components or the alternative [Icon component](https://www.astroicon.dev/guides/components).  
+> [!NOTE]  
+> These icons **won’t automatically work** with built-in Starlight components. Use them in your own components or the alternative [Icon component](https://www.astroicon.dev/guides/components).  
 
 - 🔄 You *can* override Starlight components to replace built-in icons with your custom icons using [component overrides](https://starlight.astro.build/guides/overriding-components/).
 

@@ -6,7 +6,8 @@ This [snippet](https://github.com/apathetic-tools/snippets) was created by 😐 
 
 ## Setup dummy repos for testing
 
-⚠️ **Strongly recommended:** set up a dummy org/repos before attempting this on your production repos.  
+> [!IMPORTANT]  
+> **Strongly recommended:** set up a dummy org/repos before attempting this on your production repos.  
 That way you can safely experiment, troubleshoot, and mirror your final configuration.
 
 Example setup:

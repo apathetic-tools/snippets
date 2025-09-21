@@ -1,12 +1,13 @@
 # Starlight Icons by Category ✨
 
-[//]: # (Note: This /README.md is auto-generated. Do not edit manually; see CONTRIBUTING.md.)
+<!-- WARNING: This /README.md is auto-generated. Do not edit manually; see CONTRIBUTING.md. -->
 
 🖌️ Quickly find the perfect icon for your Astro Starlight components.
 
 This [snippet](https://github.com/apathetic-tools/snippets) *(but not the icons)* was created by 😐 [Apathetic Tools](https://github.com/apathetic-tools) · [MIT License](../../../../LICENSE).
 
-> ⚠️ **Note:** Many icons are trademarked or strongly tied to a specific brand, product, or technology. Only use them when representing their intended meaning.
+> [!Important]  
+> Many icons are trademarked or strongly tied to a specific brand, product, or technology. Only use them when representing their intended meaning.
 
 ## 💡Why categorize them? What are the alternatives?
 

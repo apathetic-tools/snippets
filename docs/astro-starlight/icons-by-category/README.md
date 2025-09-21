@@ -6,7 +6,8 @@
 
 This [snippet](https://github.com/apathetic-tools/snippets) *(but not the icons)* was created by 😐 [Apathetic Tools](https://github.com/apathetic-tools) · [MIT License](../../../../LICENSE).
 
-> ⚠️ **Note:** Many icons are trademarked or strongly tied to a specific brand, product, or technology. Only use them when representing their intended meaning.
+> [!IMPORTANT]  
+> Many icons are trademarked or strongly tied to a specific brand, product, or technology. Only use them when representing their intended meaning.
 
 ## 💡Why categorize them? What are the alternatives?
 
@@ -249,7 +250,8 @@ The [Astro Icons](https://www.astroicon.dev/) integration lets you:
 - 🏠 Use local custom icons  
 - 🌐 Any icon from [Iconify Icon Sets](https://icon-sets.iconify.design/) or [Icônes](https://icones.js.org/)  
 
-> ⚠️ Note: These icons **won’t automatically work** with built-in Starlight components. Use them in your own components or the alternative [Icon component](https://www.astroicon.dev/guides/components).  
+> [!NOTE]  
+> These icons **won’t automatically work** with built-in Starlight components. Use them in your own components or the alternative [Icon component](https://www.astroicon.dev/guides/components).  
 
 - 🔄 You *can* override Starlight components to replace built-in icons with your custom icons using [component overrides](https://starlight.astro.build/guides/overriding-components/).
 
@@ -272,7 +274,8 @@ See our [UTF-8 Emoji Icons by Category](../../../../docs/text/utf8-emoji-icons-b
 
 🎉 With these options, your site will be visually polished in no time!
 
-Note: Part of this snippet is auto-generated. Refer to [CONTRIBUTING.md](./CONTRIBUTING.md) to make updates.
+> [!TIP]  
+> Part of this snippet is auto-generated. Refer to [CONTRIBUTING.md](./CONTRIBUTING.md) to make updates.
 
 > **Inspired by / Attribution:**  
 > This snippet was inspired by the following MIT-licensed sources:

@@ -94,7 +94,8 @@ On Firefox on Windows, the fix should now look something like:
 
 ## Optional: Restrict Fix to Firefox Only
 
-⚠️ **Warning:** Targeting Firefox or Windows only is non-standard and may break whenever Firefox updates.
+> [!WARNING]  
+> Targeting Firefox or Windows only is non-standard and may break whenever Firefox updates.
 
 To restrict the fix to Firefox on Windows (more brittle), wrap the rules:
 
