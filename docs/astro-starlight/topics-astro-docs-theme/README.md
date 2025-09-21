@@ -518,7 +518,7 @@ Append the following styles after the <ul> block. These are adapted from Astro D
 </style>
 ```
 
-> ![TIP]
+> [!TIP]
 > If styles conflict in the future, consider renaming the class prefix (e.g. `my-sidebar-topics`) to isolate this component.
 
 🎉 At this point your site’s topics should match the **Astro Docs theme**, and you're done with the component-override approach!
