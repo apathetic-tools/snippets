@@ -20,11 +20,6 @@ These snippets are by 😐 [Apathetic Tools](https://github.com/apathetic-tools)
 - [SVG Icons by Category reference for use in Starlight](docs/astro-starlight/icons-by-category/README.md)  
   Quickly find the perfect icon for your Astro Starlight components.
 
-## Windows
-
-- [Windows Development Setup](docs/windows/development-setup/README.md)  
-  Recommendations with WSL, VSCode, and editor defaults for consistent development.
-
 ## Git
 
 - [Per Repository User](docs/git/per-repository-user/README.md)  
@@ -39,6 +34,11 @@ These snippets are by 😐 [Apathetic Tools](https://github.com/apathetic-tools)
 
 - [UTF-8 Emoji Icons by Category](docs/text/utf8-emoji-icons-by-category/README.md)  
   Quickly find the perfect text-icon for your writting.
+
+## Windows
+
+- [Windows Development Setup](docs/windows/development-setup/README.md)  
+  Recommendations with WSL, VSCode, and editor defaults for consistent development.
 
 ---
 
