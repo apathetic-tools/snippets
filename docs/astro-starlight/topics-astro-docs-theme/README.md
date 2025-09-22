@@ -438,14 +438,6 @@ Append the following styles after the <ul> block. These are adapted from Astro D
 		}
 	}
 
-	@media (min-width: 72em) {
-		ul {
-			justify-content: space-between;
-			margin-top: 0;
-			padding: 1px;
-		}
-	}
-
   ul {
     border: var(--tab-switcher-border-width) solid var(--tab-switcher-border-color);
 		border-radius: var(--tab-switcher-border-radius);
