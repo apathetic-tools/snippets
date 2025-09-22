@@ -150,14 +150,6 @@ The file below resets styles from starlight-sidebar-topics with overrides inspir
 	}
 }
 
-@media (min-width: 72em) {
-	ul.starlight-sidebar-topics {
-		justify-content: space-between;
-		margin-top: 0;
-		padding: 1px;
-	}
-}
-
 /* ---------------- OVERRIDES ---------------- */
 
 /* Reset styles from starlight-sidebar-topics (HiDeoo/Topics.astro) with Astro Docs */
