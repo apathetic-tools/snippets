@@ -745,10 +745,12 @@ Notice: SST has `ul.starlight-sidebar-topics` controlling topics, while Astro Do
 - Pull styles from upstream sources easily
 - Minimize changes, keep them explicit 
 
+
 **Approach:**
 - 1. Reset HiDeoo/starlight-sidebar-topics  
 - 2. Apply Astro Docs styles
 - 3. Adapt for Starlight styles and starlight-sidebar-topics markup
+
 
 > [!TIP]
 > If you use **Method B — Theming with Component Overrides** you can skip Step 1, since the styles are already removed in overriden components.
