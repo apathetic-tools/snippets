@@ -133,7 +133,7 @@ export const iconInfo: IconInfo = {
 		desc: 'Elixir is a dynamic, functional language for building scalable and maintainable applications',
 	},
 	'seti:elixir_script': {
-		url: 'https://elixirscript.com/',
+		url: 'https://elixirscript.github.io/',
 		source: 'https://github.com/jesseweed/seti-ui/blob/master/icons/elixir_script.svg',
 		desc: 'ElixirScript compiles Elixir code to JavaScript',
 	},
@@ -498,7 +498,7 @@ export const iconInfo: IconInfo = {
 		desc: 'Configuration file for TypeScript projects',
 	},
 	'seti:vala': {
-		url: 'https://wiki.gnome.org/Projects/Vala',
+		url: 'https://vala.dev/',
 		source: 'https://github.com/jesseweed/seti-ui/blob/master/icons/vala.svg',
 		desc: 'Programming language that brings modern language features to GNOME developers',
 	},
@@ -518,7 +518,7 @@ export const iconInfo: IconInfo = {
 		desc: 'Binary instruction format for a stack-based virtual machine, enabling high-performance apps on the web',
 	},
 	'seti:wat': {
-		url: 'https://webassembly.org/docs/',
+		url: 'https://webassembly.github.io/spec/core/text/index.html',
 		source: 'https://github.com/jesseweed/seti-ui/blob/master/icons/wat.svg',
 		desc: 'WebAssembly Text format, human-readable representation of WASM bytecode',
 	},
@@ -548,7 +548,7 @@ export const iconInfo: IconInfo = {
 		desc: 'Archive file format that supports lossless data compression',
 	},
 	'seti:wgt': {
-		url: '',
+		url: 'https://www.w3.org/TR/widgets/',
 		source: 'https://github.com/jesseweed/seti-ui/blob/master/icons/wgt.svg',
 		desc: 'Widget archive file format, used for packaging web or mobile widgets',
 	},
@@ -816,7 +816,7 @@ export const iconInfo: IconInfo = {
 	},
 	youtube: { url: 'https://www.youtube.com/', source: '', desc: 'Video sharing platform' },
 	threads: {
-		url: 'https://www.instagram.com/threadsapp/',
+		url: 'https://www.threads.com/',
 		source: '',
 		desc: 'Text-based social network by Meta',
 	},
@@ -943,7 +943,7 @@ export const iconInfo: IconInfo = {
 		desc: 'Technology company and product ecosystem',
 	},
 	linux: {
-		url: 'https://www.kernel.org/',
+		url: 'https://en.wikipedia.org/wiki/Linux',
 		source: '',
 		desc: 'Open-source operating system kernel',
 	},
@@ -1000,12 +1000,12 @@ export const iconInfo: IconInfo = {
 		desc: 'Open platform for building developer portals',
 	},
 	confluence: {
-		url: 'https://www.atlassian.com/software/confluence',
+		url: 'https://duckduckgo.com/?q=https%3A%2F%2Fwww.atlassian.com%2Fsoftware%2Fconfluence', // https://www.atlassian.com/software/confluence // blocked github referrer
 		source: '',
 		desc: 'Collaboration and documentation software from Atlassian',
 	},
 	jira: {
-		url: 'https://www.atlassian.com/software/jira',
+		url: 'https://duckduckgo.com/?q=https%3A%2F%2Fwww.atlassian.com%2Fsoftware%2Fjira', // https://www.atlassian.com/software/jira // blocked github referrer
 		source: '',
 		desc: 'Project management and issue tracking software from Atlassian',
 	},

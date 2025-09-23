@@ -207,9 +207,10 @@ export const iconGroups: IconGroups = [
 		icons: [
 			'azureDevOps',
 			'seti:bicep',
-			'bitbucket',			
-			'seti:bsl',
-			'cloudflare',
+			'bitbucket',						
+			'cloudflare', // to put bsl on same row as mdo
+			'seti:bsl', 
+			'seti:mdo', // to put it with bsl
 			'seti:code-climate',
 			'codeberg',
 			'codePen',			
@@ -221,8 +222,7 @@ export const iconGroups: IconGroups = [
 			'seti:github',
 			'gitlab',
 			'seti:gitlab',			
-			'seti:heroku',			
-			'seti:mdo',
+			'seti:heroku',						
 			'netlify',
 			'seti:prisma',
 			'seti:salesforce',
@@ -273,9 +273,9 @@ export const iconGroups: IconGroups = [
 			'seti:svg',
 			'seti:tex',
 			'seti:tsconfig',
+			'seti:wgt', // before wasm to let wasm and wat live side by side
 			'seti:wasm',
-			'seti:wat',
-			'seti:wgt',
+			'seti:wat',			
 			'seti:xls',
 			'seti:zip',
 		],
