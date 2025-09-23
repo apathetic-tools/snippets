@@ -436,7 +436,7 @@ Copy *starlight-sidebar-topics*' root [`Sidebar.astro`](https://github.com/HiDeo
 // https://github.com/apathetic-tools/snippets/blob/main/docs/astro-starlight/topics-astro-docs-theme
 // Inspired by HiDeoo/starlight-sidebar-topics · MIT
 // https://github.com/HiDeoo/starlight-sidebar-topics/blob/main/packages/starlight-sidebar-topics/overrides/Sidebar.astro
----
+
 import Default from '@astrojs/starlight/components/Sidebar.astro'
 import StarlightSidebarTopicsSidebar from '../components/starlight/Sidebar.astro'
 ---
@@ -482,6 +482,7 @@ Copy *starlight-sidebar-topics'* [`Topics,astro`](https://github.com/HiDeoo/star
 // https://github.com/HiDeoo/starlight-sidebar-topics/blob/main/packages/starlight-sidebar-topics/components/Topics.astro
 // Inspired by Astro/docs · MIT
 // https://docs.astro.build/
+
 import { Badge, Icon } from '@astrojs/starlight/components'
 
 const { topics } = Astro.locals.starlightSidebarTopics
