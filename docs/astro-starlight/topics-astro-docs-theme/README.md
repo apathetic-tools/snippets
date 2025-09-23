@@ -370,9 +370,9 @@ You’re done with the CSS-only approach.
 
 >[!TIP]
 > If your site doesn’t look like the screenshot:
-> - Double-check that you followed the steps exactly.  
-> - Make sure you haven’t installed other CSS, themes, or integrations that might conflict.  
-> - Still off? See the **Epilog: Getting the latest version** section — that’s usually the culprit.
+> - Verify you followed each step exactly.  
+> - Check for other CSS, themes, or integrations that may conflict.  
+> - Still not right? See **Epilog: Getting the latest version** for the fix.
 
 ## Alternative: Using Method B — Theming with Component Overrides
 
@@ -621,16 +621,18 @@ Append the following styles after the <ul> block. These are adapted from Astro D
 </style>
 ```
 
-> [!TIP]
-> If styles conflict in the future, consider renaming the class prefix (e.g. `my-sidebar-topics`) to isolate this component.
+>[!TIP]
+> To prevent future style conflicts, you can rename the class prefix  
+> (for example, use `my-sidebar-topics` instead of `starlight-sidebar-topics`)  
+> to fully isolate this component.
 
-🎉 At this point your site’s topics should match the **Astro Docs theme**, and you're done with the component-override approach!
+🎉 At this point your site’s topics should match the Astro Docs theme! You're done with the component-override approach.
 
 >[!TIP]
 > If your site doesn’t look like the screenshot:
-> - Double-check that you followed the steps exactly.  
-> - Make sure you haven’t installed other CSS, themes, or integrations that might conflict.  
-> - Still off? See the **Epilog: Getting the latest version** section — that’s usually the culprit.
+> - Verify you followed each step exactly.  
+> - Check for other CSS, themes, or integrations that may conflict.  
+> - Still not right? See **Epilog: Getting the latest version** for the fix.
 
 ## Wrap-up
 
@@ -641,30 +643,32 @@ You’ve successfully themed your topics sidebar to match the Astro Docs style!
 
 Either approach will give your site a polished, consistent look while letting you balance control versus maintenance.
 
-**Enjoy your new look!**
+**Enjoy your newly themed sidebar!**
 
 ![Astro Docs group theme](assets/starlight-sidebar-topics-astro-docs-theme.png)
 
 ## Epilog: Getting the latest version
 
+This step is optional. The guide is usually up to date, but if your styles don’t match the screenshot or you’re updating to a newer version of any theme, this section shows how to safely update your styles.
+
 >[!TIP]
-> Before you try updating the version, ensure:
-> - Try the guide as-is first, it is likely up to date.
-> - Double-check that you followed the steps exactly.  
-> - Make sure you haven’t installed other CSS, themes, or integrations that might conflict.  
+> Before updating, ensure:
+> - You’ve followed the guide as-is (it’s likely current)
+> - No conflicting CSS, themes, or integrations are installed
 
 Still off? Let's update the styles to the latest version.
 
-What may have changed?
-- Astro Docs theme
-- Starlight theme
+### What may have changed
+- Astro Docs theme  
+- Starlight theme  
 - starlight-sidebar-topics theme
 
-We can think of each themes as containing both styles (CSS) and markup (HTML/Components).
+Each theme contains both **styles (CSS)** and **markup (HTML/Components)**, which may affect the topics sidebar.
 
-#### Component Structure
+### Component Structure (SST vs Astro Docs)
 
-Our site will be using **Hideoo/starlight-sidebar-topics** (SST) to generate the topics markup. Here is the component tree:
+Our site uses **Hideoo/starlight-sidebar-topics** (SST) for topics, alongside the regular sidebar:
+
 - [sst/overrides/Sidebar.astro](https://github.com/HiDeoo/starlight-sidebar-topics/blob/main/packages/starlight-sidebar-topics/overrides/Sidebar.astro)
   - *(topics only)* https://github.com/HiDeoo/starlight-sidebar-topics/blob/main/packages/starlight-sidebar-topics/components/starlight/Sidebar.astro
     - [sst/componeents/Topics.astro](https://github.com/HiDeoo/starlight-sidebar-topics/blob/main/packages/starlight-sidebar-topics/components/Topics.astro)
@@ -676,9 +680,9 @@ Our site will be using **Hideoo/starlight-sidebar-topics** (SST) to generate the
       - *(actual regular sidebar listing)* [starlight/components/SidebarSublist.astro](https://github.com/withastro/starlight/blob/main/packages/starlight/components/SidebarSublist.astro)
 	    - ...
  
-You can see we pull componenets from SST and Starlight, but none from our local install. The SST topics list is also siblings with the regular sidebar (just above it on the page), but not nested inside it.
+> SST topics list sits **next to** the regular sidebar; it’s not nested.
 
-On the other hand, the **Astro Docs** (AD) site has evolved organically before *Starlight* or *starlight-sidebar-topics* existed, and in many cases pioneered their features. Their implementation is often different or modified significantly, and sometimes they've integrated components in later in different ways. Here is the component tree for that site:
+**Astro Docs (AD)** uses a different structure and has evolved organically:
 
 - [sd/components/starlight/Sidebar.astro](https://github.com/withastro/docs/blob/main/src/components/starlight/Sidebar.astro)
   - [starlight/components/SidebarPersister.astro](https://github.com/withastro/starlight/blob/main/packages/starlight/components/SidebarPersister.astro)
@@ -688,13 +692,12 @@ On the other hand, the **Astro Docs** (AD) site has evolved organically before *
 	  - *(regular sidebar)* [sd/components/tabs/TabPanel.astro](https://github.com/withastro/docs/blob/main/src/components/tabs/TabPanel.astro)
 	    - *(actual regular sidebar listing)* [starlight/components/SidebarSublist.astro](https://github.com/withastro/starlight/blob/main/packages/starlight/components/SidebarSublist.astro)
 
- Hard to see in this tree, but many components also pass slots and fragments down to child components, overwriting default behaviour.
+> Many components pass slots and fragments down to children, which may overwrite default behavior.
 
- #### Markup Structure
 
- By walking through the components we can make a map of the final markup we're dealing with and have to translate the theme from.
+### Markup Structure (SST vs Astro Docs)
 
- Our markup using **Hideoo/starlight-sidebar-topics**:
+**Hideoo/starlight-sidebar-topics** markup (our site):
 
 ```jsx
 <ul class="starlight-sidebar-topics">
@@ -707,7 +710,7 @@ On the other hand, the **Astro Docs** (AD) site has evolved organically before *
  <!-- regular starlight/sidebar (starlight/SidebarSublist) with inline styles ... -->
  ```
 
- and the **Astro Docs** markup:
+ **Astro Docs** markup:
 
  ```jsx
 <tabbed-content class="tabbed-sidebar">
@@ -721,25 +724,27 @@ On the other hand, the **Astro Docs** (AD) site has evolved organically before *
 </tabbed-content>
  ```
 
- We can see here that while our markup has `ul.starlight-sidebar-topics` that affects the topics, the astro docs website has a `.tabbed-sidebar` and `ul.tab-list`. We'll need to combine those two in our styles.
+Notice: SST has `ul.starlight-sidebar-topics` controlling topics, while Astro Docs has `.tabbed-sidebar` + `ul.tab-list`. We'll need to merge these styles carefully.
 
-#### Mapping Strategy
+### Mapping Strategy
 
 **Goals:**
-- Always be able to pull styles from upstream sources 
-- Minimize changes, but keep them explicit 
+- Pull styles from upstream sources easily
+- Minimize changes, keep them explicit 
 
 **Approach:**
 - 1. Reset HiDeoo/starlight-sidebar-topics  
-- 2. Apply astro/docs styles
-- 3. Adapt for use with Starlight styles and starlight-sidebar-topics markup
-
-This approach is more verbose, but isolates changes and simplifies future merges. 
+- 2. Apply Astro Docs styles
+- 3. Adapt for Starlight styles and starlight-sidebar-topics markup
 
 > [!TIP]
-> If you use `Method B — Theming with Component Overrides` you can skip `Step 1. Reset HiDeoo/starlight-sidebar-topics` as you'll have already removed the styles when you override the components.
+> If you use **Method B — Theming with Component Overrides** you can skip Step 1, since the styles are already removed in overriden components.
 
-Do this approach, you should go through the upstream components we linked and find the styles that are applied to what markup, and translate them into the right places in your own styles, no mater which method you choose. We've tried to make it as easy to copy and paste each selector into an equivalent selector as possible with minimal manual merging.
+By following this approach, you can trace upstream styles to their original markup and translate them to your own selectors. Copy-paste where possible, merge manually only when necessary.
+
+Good luck! 🎯  
+
+From here, the rest is up to you: explore upstream styles, map them carefully, and update your selectors as needed. With this approach, you’ll be able to safely keep your topics sidebar in sync with the latest Astro Docs theme while maintaining your customizations.
 
 ---
 
