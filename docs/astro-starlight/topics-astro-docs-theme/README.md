@@ -662,12 +662,16 @@ This step is optional. The guide is usually up to date, but if your styles donâ€
 
 Still off? Let's update the styles to the latest version.
 
+---
+
 ### What may have changed
 - Astro Docs theme  
 - Starlight theme  
 - starlight-sidebar-topics theme
 
 Each theme contains both **styles (CSS)** and **markup (HTML/Components)**, which may affect the topics sidebar.
+
+---
 
 ### Component Structure (SST vs Astro Docs)
 
@@ -700,6 +704,7 @@ Our site uses **Hideoo/starlight-sidebar-topics** (SST) for topics, alongside th
 
 > Many components pass slots and fragments down to children, which may overwrite default behavior.
 
+---
 
 ### Markup Structure (SST vs Astro Docs)
 
@@ -731,6 +736,8 @@ Our site uses **Hideoo/starlight-sidebar-topics** (SST) for topics, alongside th
  ```
 
 Notice: SST has `ul.starlight-sidebar-topics` controlling topics, while Astro Docs has `.tabbed-sidebar` + `ul.tab-list`. We'll need to merge these styles carefully.
+
+---
 
 ### Mapping Strategy
 
