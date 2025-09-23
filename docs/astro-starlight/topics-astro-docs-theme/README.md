@@ -116,82 +116,26 @@ Our example does so methodically so that you can more easily copy-paste verbatim
 /**
  * Astro Docs theme port for starlight-sidebar-topics
  * 
- * Inspired by Apathetic Tools · MIT
+ * See following guide for instructions on how to easily update this file. 
+ * inspired by Apathetic Tools · MIT
  * https://github.com/apathetic-tools/snippets/blob/main/docs/astro-starlight/topics-astro-docs-theme
+ * 
  * Theme: Astro Docs · MIT
  * Ref: https://github.com/withastro/docs
  */
 
 /**
- * Markup Structure needed for translation
+ * Step 1. Reset HiDeoo/starlight-sidebar-topics
  *
- * Sources — Hideoo/starlight-sidebar-topics:
- * - https://github.com/HiDeoo/starlight-sidebar-topics/blob/main/packages/starlight-sidebar-topics/overrides/Sidebar.astro
- * - https://github.com/withastro/starlight/blob/main/packages/starlight/components/Sidebar.astro
- * - https://github.com/withastro/starlight/blob/main/packages/starlight/components/SidebarPersister.astro
- * - https://github.com/withastro/starlight/blob/main/packages/starlight/components/SidebarSublist.astro
- * - https://github.com/HiDeoo/starlight-sidebar-topics/blob/main/packages/starlight-sidebar-topics/components/starlight/Sidebar.astro
- * - https://github.com/HiDeoo/starlight-sidebar-topics/blob/main/packages/starlight-sidebar-topics/components/Topics.astro
- * - https://github.com/withastro/starlight/blob/main/packages/starlight/user-components/Icon.astro
- *
- * Sources — withastro/docs:
- * - https://github.com/withastro/docs/blob/main/src/components/starlight/Sidebar.astro
- * - https://github.com/withastro/starlight/blob/main/packages/starlight/components/SidebarPersister.astro
- * - https://github.com/withastro/starlight/blob/main/packages/starlight/components/SidebarSublist.astro
- * - https://github.com/withastro/docs/blob/main/src/components/tabs/TabbedContent.astro
- * - https://github.com/withastro/docs/blob/main/src/components/tabs/TabListItem.astro
- * - https://github.com/withastro/starlight/blob/main/packages/starlight/user-components/Icon.astro
- *
- * Example Markup — Hideoo/starlight-sidebar-topics:
- *
- * <ul class="starlight-sidebar-topics">
- *   <li><a>
- *     <div class="starlight-sidebar-topics-icon"><Icon /></div>
- *     <div>{label} <Badge class="starlight-sidebar-topics-badge" /></div>
- *   </a></li>
- *   <li><a class="starlight-sidebar-topics-current"><!-- ... --></a></li>
- * </ul>
- * <!-- regular starlight/sidebar (starlight/SidebarSublist) with inline styles ... -->
- *
- *
- * Example Markup — astro/docs:
- *
- * <tabbed-content class="tabbed-sidebar">
- *   <ul class="tab-list">
- *     <TabListItem class="tab-item"><li><a class="tab-link"><Icon class="icon" /> {label}</a></li></TabListItem>
- *     <TabListItem class="tab-item"><li><a class="tab-link" aria-selected="true"><!-- ... --></a></li></TabListItem>
- *   </ul>
- *   <div class="panels">
- *     <!-- regular starlight/SidebarSublist with inline styles ... -->
- *   </div>
- * </tabbed-content>
- */
-
-/**
-  * Strategy
-  *
-  * Goals:
-  * - Always be able to pull styles from upstream sources 
-  * - Minimize changes, but keep them explicit 
-  *
-  * Approach:
-  * - 1. Reset HiDeoo/starlight-sidebar-topics  
-  * - 2. Apply astro/docs styles
-  * - 3. Adapt for use with Starlight styles and starlight-sidebar-topics markup
-  *
-  * This is more verbose, but isolates changes and simplifies future merges.
-  */
-
-/**
- * Step 1. Reset HiDeoo/starlight-sidebar-topics (Topics.astro)
- *
- * Source: https://github.com/HiDeoo/starlight-sidebar-topics/blob/main/packages/starlight-sidebar-topics/components/Topics.astro
+ * Components with styles:
+ * - starlight-sidebar-topics/components/Topics.astro
+ *   https://github.com/HiDeoo/starlight-sidebar-topics/blob/main/packages/starlight-sidebar-topics/components/Topics.astro
  *
  * Notes: 
+ * - `[data-theme=...]` must always remain the first selector   
+ * - Remove `:global()` wrappers since we’re in global CSS already   
  * - Component styles require specificity → prefix `.starlight-sidebar-topics`  
  * - For the `ul` itself, use `ul.starlight-sidebar-topics` (not `.starlight-sidebar-topics ul`)  
- * - Remove `:global()` wrappers since we’re in global CSS already   
- * - `[data-theme=...]` must remain the first selector   
  *
  * We comment the originals for reference, then add resets with `revert` where possible.
  */
@@ -292,25 +236,37 @@ ul.starlight-sidebar-topics::after {
 }
 
 /**
- * Step 2.1. Apply theme from astro/docs (Sidebar.astro)
- * 
+ * Step 2. Apply theme from astro/docs 
+ *
+ * NOTE: Due to difference in markup between `Astro Docs` and `starlight-sidebar-topics`:
+ * - We need to merge styles of `.tabbed-sidebar` and `.tab-list` into a single `ul.starlight-sidebar-topics`.
+ *   This means things like padding and margins need to be added together, and we need to be careful what will override what.
+ *
+ * Components with styles:
+ *
+ * Component #1: components/starlight/Sidebar.astro
  * Source: https://github.com/withastro/docs/blob/main/src/components/starlight/Sidebar.astro
  *
  * Changes:
  * - Remove astro-only selectors (`.fallback`, `.desktop-footer`, `.sidebar-pane`)  
+ * - Remove `:global()` wrappers since we’re in global CSS already  
  * - Map classes:  
- *   - `.tabbed-sidebar .tab-list` → `ul.starlight-sidebar-topics.starlight-sidebar-topics.starlight-sidebar-topics`  
- *   - `.tabbed-sidebar` → `ul.starlight-sidebar-topics.starlight-sidebar-topics`  
+ *   - `.tabbed-sidebar .tab-list` → merge into `ul.starlight-sidebar-topics`  
+ *   - `.tabbed-sidebar` → merge into `ul.starlight-sidebar-topics`  
  *   - `.tab-item` → `.starlight-sidebar-topics li`  
  *   - `.icon` → `.starlight-sidebar-topics-icon`  
  *   - `a[aria-selected='true']` → `a.starlight-sidebar-topics-current`  
- * - Remove `:global()` wrappers since we’re in global CSS already  
  *
- * Note: We use repeating classname specificity to simulate the two divs in astro/docs for topics to our one.
+ * Component #2: components/tabs/TabbedContent.astro
+ * Source: https://github.com/withastro/docs/blob/main/src/components/tabs/TabbedContent.astro
+ *
+ * Changes:
+ * - Remove `.tab-list--styled` and `.panels--styled` (not used here) 
+ * - Map class: `.tab-list` → merge into `ul.starlight-sidebar-topics`  
  */
 
 /* Styles for the custom tab switcher. */
-ul.starlight-sidebar-topics.starlight-sidebar-topics {
+ul.starlight-sidebar-topics {
 	
 	/* Layout variables */
 	--tab-switcher-border-width: 1px;
@@ -331,7 +287,7 @@ ul.starlight-sidebar-topics.starlight-sidebar-topics {
 	--tab-item-background-color--active: var(--sl-color-black);
 }
 /* Dark theme variations */
-[data-theme='dark'] ul.starlight-sidebar-topics.starlight-sidebar-topics {
+[data-theme='dark'] ul.starlight-sidebar-topics {
 	--tab-switcher-text-color: var(--sl-color-gray-2);
 	--tab-switcher-icon-color: var(--sl-color-gray-3);
 	--tab-item-background-color--hover: var(--sl-color-gray-5);
@@ -339,14 +295,14 @@ ul.starlight-sidebar-topics.starlight-sidebar-topics {
 
 @media (min-width: 50rem) {	
 	/* Dark theme variations with the desktop sidebar visible */
-	[data-theme='dark'] ul.starlight-sidebar-topics.starlight-sidebar-topics {		
+	[data-theme='dark'] ul.starlight-sidebar-topics {		
 		--tab-switcher-background-color: var(--sl-color-black);
 		--tab-item-background-color--hover: var(--sl-color-gray-6);
 		--tab-item-background-color--active: var(--sl-color-gray-6);
 	}
 }
 
-ul.starlight-sidebar-topics.starlight-sidebar-topics.starlight-sidebar-topics {	
+ul.starlight-sidebar-topics {	
 	border: var(--tab-switcher-border-width) solid var(--tab-switcher-border-color);
 	border-radius: var(--tab-switcher-border-radius);
 	display: flex;
@@ -355,6 +311,10 @@ ul.starlight-sidebar-topics.starlight-sidebar-topics.starlight-sidebar-topics {
 	padding: var(--tab-switcher-padding);
 	background-color: var(--tab-switcher-background-color);
 	margin-bottom: 1.5rem;
+
+	/* from .tab-list */
+	list-style: none;
+	/* padding: 0; */ /* do not need to add this to above padding since it is 0 */
 }
 
 .starlight-sidebar-topics li a {	
@@ -393,39 +353,14 @@ ul.starlight-sidebar-topics.starlight-sidebar-topics.starlight-sidebar-topics {
 }
 
 /**
- * Step 2.2. Apply theme from astro/docs (TabbedContent.astro)
- * 
- * Source: https://github.com/withastro/docs/blob/main/src/components/tabs/TabbedContent.astro
+ * Step 3. Adapt for use with Starlight styles and starlight-sidebar-topics markup
  *
- * Changes:
- * - Map class: `.tab-list` → `ul.starlight-sidebar-topics`  
- * - Remove `.tab-list--styled` and `.panels--styled` (not used here) 
- * - `.tabbed-sidebar` → `.starlight-sidebar-topics.starlight-sidebar-topics`
- *
- * Note: Same classname simulation as above. Part of this will end up overwriten.
+ * - Starlight handles bottom margin differently, so we remove astro/docs'  
+ * - The icon is wrapped in a `<div>` in starlight-sidebar-topics (vs inline in astro/docs)
+ *	  By default, that `<div>` is `display: block; align-items: normal;` and adds extra height.
+ *   We force it to inherit flex styles from the parent `<a>` to match astro/docs.
  */
-ul.starlight-sidebar-topics {	
-	list-style: none;
-	padding: 0;
-}
-
-/**
- * Step 2.3.  Apply theme from astro/docs (TabListItem.astro)
- * 
- * Source: https://github.com/withastro/docs/blob/main/src/components/tabs/TabListItem.astro
- * 
- * No styles currently defined here → nothing to apply. 
- */
- 
- /**
-  * Step 3. Adapt for use with Starlight styles and starlight-sidebar-topics markup
-  *
-  * - Starlight handles bottom margin differently, so we remove astro/docs'  
-  * - The icon is wrapped in a `<div>` in starlight-sidebar-topics (vs inline in astro/docs)
-  *	  By default, that `<div>` is `display: block; align-items: normal;` and adds extra height.
-  *   We force it to inherit flex styles from the parent `<a>` to match astro/docs.
-  */
-ul.starlight-sidebar-topics.starlight-sidebar-topics.starlight-sidebar-topics {
+ul.starlight-sidebar-topics {
 	margin-bottom: 0;
 }
 
@@ -442,6 +377,12 @@ ul.starlight-sidebar-topics.starlight-sidebar-topics.starlight-sidebar-topics {
 
 🎉 At this point, your site’s topics should now match the Astro Docs theme!
 You’re done with the CSS-only approach.
+
+>[!TIP]
+> If your site doesn’t look like the screenshot:
+> - Double-check that you followed the steps exactly.  
+> - Make sure you haven’t installed other CSS, themes, or integrations that might conflict.  
+> - Still off? See the **Epilog: Getting the latest version** section — that’s usually the culprit.
 
 ## Alternative: Using Method B — Theming with Component Overrides
 
@@ -577,7 +518,7 @@ const { topics } = Astro.locals.starlightSidebarTopics
 </ul>
 
 <style>
-// original inline styles removed; we’ll inject our theme next
+/* original inline styles removed; we’ll inject our theme next */
 </style>
 ```
 
@@ -695,6 +636,12 @@ Append the following styles after the <ul> block. These are adapted from Astro D
 
 🎉 At this point your site’s topics should match the **Astro Docs theme**, and you're done with the component-override approach!
 
+>[!TIP]
+> If your site doesn’t look like the screenshot:
+> - Double-check that you followed the steps exactly.  
+> - Make sure you haven’t installed other CSS, themes, or integrations that might conflict.  
+> - Still off? See the **Epilog: Getting the latest version** section — that’s usually the culprit.
+
 ## Wrap-up
 
 You’ve successfully themed your topics sidebar to match the Astro Docs style! 
@@ -707,6 +654,102 @@ Either approach will give your site a polished, consistent look while letting yo
 **Enjoy your new look!**
 
 ![Astro Docs group theme](assets/starlight-sidebar-topics-astro-docs-theme.png)
+
+## Epilog: Getting the latest version
+
+>[!TIP]
+> Before you try updating the version, ensure:
+> - Try the guide as-is first, it is likely up to date.
+> - Double-check that you followed the steps exactly.  
+> - Make sure you haven’t installed other CSS, themes, or integrations that might conflict.  
+
+Still off? Let's update the styles to the latest version.
+
+What may have changed?
+- Astro Docs theme
+- Starlight theme
+- starlight-sidebar-topics theme
+
+We can think of each themes as containing both styles (CSS) and markup (HTML/Components).
+
+#### Component Structure
+
+Our site will be using **Hideoo/starlight-sidebar-topics** (SST) to generate the topics markup. Here is the component tree:
+- [sst/overrides/Sidebar.astro](https://github.com/HiDeoo/starlight-sidebar-topics/blob/main/packages/starlight-sidebar-topics/overrides/Sidebar.astro)
+  - *(topics only)* https://github.com/HiDeoo/starlight-sidebar-topics/blob/main/packages/starlight-sidebar-topics/components/starlight/Sidebar.astro
+    - [sst/componeents/Topics.astro](https://github.com/HiDeoo/starlight-sidebar-topics/blob/main/packages/starlight-sidebar-topics/components/Topics.astro)
+	  - *(actual topic listing)*
+	  	- [starlight/user-components/Icon.astro](https://github.com/withastro/starlight/blob/main/packages/starlight/user-components/Icon.astro)
+		- [starlight/user-components/Badge.astro](https://github.com/withastro/starlight/blob/main/packages/starlight/user-components/Badge.astro)
+  - *(regular sidebar)* [starlight/components/Sidebar.astro](https://github.com/withastro/starlight/blob/main/packages/starlight/components/Sidebar.astro)
+    - [starlight/components/SidebarPersister.astro](https://github.com/withastro/starlight/blob/main/packages/starlight/components/SidebarPersister.astro)
+      - *(actual regular sidebar listing)* [starlight/components/SidebarSublist.astro](https://github.com/withastro/starlight/blob/main/packages/starlight/components/SidebarSublist.astro)
+	    - ...
+ 
+You can see we pull componenets from SST and Starlight, but none from our local install. The SST topics list is also siblings with the regular sidebar (just above it on the page), but not nested inside it.
+
+On the other hand, the **Astro Docs** (AD) site has evolved organically before *Starlight* or *starlight-sidebar-topics* existed, and in many cases pioneered their features. Their implementation is often different or modified significantly, and sometimes they've integrated components in later in different ways. Here is the component tree for that site:
+
+- [sd/components/starlight/Sidebar.astro](https://github.com/withastro/docs/blob/main/src/components/starlight/Sidebar.astro)
+  - [starlight/components/SidebarPersister.astro](https://github.com/withastro/starlight/blob/main/packages/starlight/components/SidebarPersister.astro)
+    - [sd/components/tabs/TabbedContent.astro](https://github.com/withastro/docs/blob/main/src/components/tabs/TabbedContent.astro)
+	  - *(topics only)* [sd/components/tabs/TabListItem.astro](https://github.com/withastro/docs/blob/main/src/components/tabs/TabListItem.astro)
+	    - [starlight/user-components/Icon.astro](https://github.com/withastro/starlight/blob/main/packages/starlight/user-components/Icon.astro)
+	  - *(regular sidebar)* [sd/components/tabs/TabPanel.astro](https://github.com/withastro/docs/blob/main/src/components/tabs/TabPanel.astro)
+	    - *(actual regular sidebar listing)* [starlight/components/SidebarSublist.astro](https://github.com/withastro/starlight/blob/main/packages/starlight/components/SidebarSublist.astro)
+
+ Hard to see in this tree, but many components also pass slots and fragments down to child components, overwriting default behaviour.
+
+ #### Markup Structure
+
+ By walking through the components we can make a map of the final markup we're dealing with and have to translate the theme from.
+
+ Our markup using **Hideoo/starlight-sidebar-topics**:
+
+```jsx
+<ul class="starlight-sidebar-topics">
+  <li><a>
+    <div class="starlight-sidebar-topics-icon"><Icon /></div>
+    <div>{label} <Badge class="starlight-sidebar-topics-badge" /></div>
+  </a></li>
+  <li><a class="starlight-sidebar-topics-current"><!-- ... --></a></li>
+ </ul>
+ <!-- regular starlight/sidebar (starlight/SidebarSublist) with inline styles ... -->
+ ```
+
+ and the **Astro Docs** markup:
+
+ ```jsx
+<tabbed-content class="tabbed-sidebar">
+  <ul class="tab-list">
+    <TabListItem class="tab-item"><li><a class="tab-link"><Icon class="icon" /> {label}</a></li></TabListItem>
+    <TabListItem class="tab-item"><li><a class="tab-link" aria-selected="true"><!-- ... --></a></li></TabListItem>
+  </ul>
+  <div class="panels">
+    <!-- regular starlight/SidebarSublist with inline styles ... -->
+  </div>
+</tabbed-content>
+ ```
+
+ We can see here that while our markup has `ul.starlight-sidebar-topics` that affects the topics, the astro docs website has a `.tabbed-sidebar` and `ul.tab-list`. We'll need to combine those two in our styles.
+
+#### Mapping Strategy
+
+**Goals:**
+- Always be able to pull styles from upstream sources 
+- Minimize changes, but keep them explicit 
+
+**Approach:**
+- 1. Reset HiDeoo/starlight-sidebar-topics  
+- 2. Apply astro/docs styles
+- 3. Adapt for use with Starlight styles and starlight-sidebar-topics markup
+
+This approach is more verbose, but isolates changes and simplifies future merges. 
+
+> [!TIP]
+> If you use `Method B — Theming with Component Overrides` you can skip `Step 1. Reset HiDeoo/starlight-sidebar-topics` as you'll have already removed the styles when you override the components.
+
+Do this approach, you should go through the upstream components we linked and find the styles that are applied to what markup, and translate them into the right places in your own styles, no mater which method you choose. We've tried to make it as easy to copy and paste each selector into an equivalent selector as possible with minimal manual merging.
 
 ---
 
