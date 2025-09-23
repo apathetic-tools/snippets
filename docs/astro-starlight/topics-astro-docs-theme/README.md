@@ -669,6 +669,7 @@ Still off? Let's update the styles to the latest version.
 - Starlight theme  
 - starlight-sidebar-topics theme
 
+
 Each theme contains both **styles (CSS)** and **markup (HTML/Components)**, which may affect the topics sidebar.
 
 ---
