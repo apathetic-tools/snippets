@@ -104,17 +104,216 @@ There are a few things we need to do:
 - Be very careful when crafting our selector priority so that our styles apply properly (this is decievingly complicated).
 - Test the styles in both light and dark mode, under multiple browsers.
 
-The file below resets styles from starlight-sidebar-topics with overrides inspired by Astro Docs.
+The `sidebar-topics-overrides.css` file below resets styles from *starlight-sidebar-topics* with overrides inspired by *Astro Docs*. 
+
+Our example does so methodically so that you can more easily copy-paste verbatim from the source files into the overrides if something changes upstream.
+
+::[!NOTE]
+:: If you prefer to merge all the classes into a single set of element modifications, see our [merged sidebar-topics-overrides.css](assets/sidebar-topics-overrides-merged.css) example instead. It is much shorter but may be more difficult to maintain over a long period of time.
 
 `src/styles/sidebar-topics-overrides.css`
 ```css
 /**
+ * Astro Docs theme port for starlight-sidebar-topics
+ * 
  * Inspired by Apathetic Tools · MIT
  * https://github.com/apathetic-tools/snippets/blob/main/docs/astro-starlight/topics-astro-docs-theme
  * Theme: Astro Docs · MIT
  * Ref: https://github.com/withastro/docs
  */
-.starlight-sidebar-topics {
+
+/**
+ * Markup Structure needed for translation
+ *
+ * Sources — Hideoo/starlight-sidebar-topics:
+ * - https://github.com/HiDeoo/starlight-sidebar-topics/blob/main/packages/starlight-sidebar-topics/overrides/Sidebar.astro
+ * - https://github.com/withastro/starlight/blob/main/packages/starlight/components/Sidebar.astro
+ * - https://github.com/withastro/starlight/blob/main/packages/starlight/components/SidebarPersister.astro
+ * - https://github.com/withastro/starlight/blob/main/packages/starlight/components/SidebarSublist.astro
+ * - https://github.com/HiDeoo/starlight-sidebar-topics/blob/main/packages/starlight-sidebar-topics/components/starlight/Sidebar.astro
+ * - https://github.com/HiDeoo/starlight-sidebar-topics/blob/main/packages/starlight-sidebar-topics/components/Topics.astro
+ * - https://github.com/withastro/starlight/blob/main/packages/starlight/user-components/Icon.astro
+ *
+ * Sources — withastro/docs:
+ * - https://github.com/withastro/docs/blob/main/src/components/starlight/Sidebar.astro
+ * - https://github.com/withastro/starlight/blob/main/packages/starlight/components/SidebarPersister.astro
+ * - https://github.com/withastro/starlight/blob/main/packages/starlight/components/SidebarSublist.astro
+ * - https://github.com/withastro/docs/blob/main/src/components/tabs/TabbedContent.astro
+ * - https://github.com/withastro/docs/blob/main/src/components/tabs/TabListItem.astro
+ * - https://github.com/withastro/starlight/blob/main/packages/starlight/user-components/Icon.astro
+ *
+ * Example Markup — Hideoo/starlight-sidebar-topics:
+ *
+ * <ul class="starlight-sidebar-topics">
+ *   <li><a>
+ *     <div class="starlight-sidebar-topics-icon"><Icon /></div>
+ *     <div>{label} <Badge class="starlight-sidebar-topics-badge" /></div>
+ *   </a></li>
+ *   <li><a class="starlight-sidebar-topics-current"><!-- ... --></a></li>
+ * </ul>
+ * <!-- regular starlight/sidebar (starlight/SidebarSublist) with inline styles ... -->
+ *
+ *
+ * Example Markup — astro/docs:
+ *
+ * <tabbed-content class="tabbed-sidebar">
+ *   <ul class="tab-list">
+ *     <TabListItem class="tab-item"><li><a class="tab-link"><Icon class="icon" /> {label}</a></li></TabListItem>
+ *     <TabListItem class="tab-item"><li><a class="tab-link" aria-selected="true"><!-- ... --></a></li></TabListItem>
+ *   </ul>
+ *   <div class="panels">
+ *     <!-- regular starlight/SidebarSublist with inline styles ... -->
+ *   </div>
+ * </tabbed-content>
+ */
+
+
+/**
+  * Strategy
+  *
+  * Goals:
+  * - Always be able to pull styles from upstream sources 
+  * - Minimize changes, but keep them explicit 
+  *
+  * Approach:
+  * - 1. Reset HiDeoo/starlight-sidebar-topics  
+  * - 2. Apply astro/docs styles
+  * - 3. Adapt for use with Starlight styles and starlight-sidebar-topics markup
+  *
+  * This is more verbose, but isolates changes and simplifies future merges.
+  */
+
+/**
+ * Step 1. Reset HiDeoo/starlight-sidebar-topics (Topics.astro)
+ *
+ * Source: https://github.com/HiDeoo/starlight-sidebar-topics/blob/main/packages/starlight-sidebar-topics/components/Topics.astro
+ *
+ * Notes: 
+ *  - Component styles require specificity → prefix `.starlight-sidebar-topics`  
+ * - For the `ul` itself, use `ul.starlight-sidebar-topics` (not `.starlight-sidebar-topics ul`)  
+ * - Remove `:global()` wrappers since we’re in global CSS already   
+ * - `[data-theme=...]` must remain the first selector   
+ *
+ * We comment the originals for reference, then add resets with `revert` where possible.
+ */
+ul.starlight-sidebar-topics {
+	/* list-style: none;
+	padding: 0; */	
+	list-style: revert;
+	padding: revert;	
+}
+
+ul.starlight-sidebar-topics::after {
+	/* content: '';
+    display: block;
+    margin-top: 1rem;
+    height: 1px;
+    border-top: 1px solid var(--sl-color-hairline-light); */
+
+	display: none;	
+}
+
+.starlight-sidebar-topics li {	
+	/* overflow-wrap: anywhere; */
+
+	 overflow-wrap: revert;
+}
+
+.starlight-sidebar-topics li + li {
+	/* margin-top: 0.25rem; */
+	
+	margin-top: revert;
+}
+
+.starlight-sidebar-topics a {
+	/* align-items: center;
+    color: var(--sl-color-white);
+    display: flex;
+    font-size: var(--sl-text-base);
+    font-weight: 600;
+    gap: 0.5rem;
+    line-height: 1.5;
+    padding: 0.3em 0.5rem;
+    text-decoration: none; */
+
+	align-items: revert;
+    color: revert;
+    display: revert;
+    font-size: revert;
+    font-weight: revert;
+    gap: revert;
+    line-height: revert;
+    padding: revert;
+    text-decoration: revert;
+}
+
+.starlight-sidebar-topics a:is(.starlight-sidebar-topics-current, :hover, :focus-visible) {
+	/* color: var(--sl-color-accent-high); */
+	
+	color: revert;
+}
+
+[data-theme='light'] .starlight-sidebar-topics a.starlight-sidebar-topics-current {
+	/* color: var(--sl-color-accent); */
+	
+	color: revert;
+}
+
+.starlight-sidebar-topics .starlight-sidebar-topics-icon {
+	/* align-items: center;
+	border-radius: 0.25rem;
+	border: 1px solid var(--sl-color-gray-4);
+	display: flex;
+	justify-content: center;
+	padding: 0.1875rem;
+	padding: 0.25rem; */
+
+	align-items: revert;
+	border-radius: revert;
+	border: revert;
+	display: revert;
+	justify-content: revert;
+	padding: revert;
+}
+
+.starlight-sidebar-topics a:is(.starlight-sidebar-topics-current, :hover, :focus-visible) .starlight-sidebar-topics-icon {
+	/* background-color: var(--sl-color-text-accent);
+	border-color: var(--sl-color-text-accent);
+	color: var(--sl-color-text-invert); */
+
+	background-color: revert;
+	border-color: revert;
+	color: revert;
+}
+
+.starlight-sidebar-topics .starlight-sidebar-topics-badge {
+	/* margin-inline-start: 0.25em; */
+
+	margin-inline-start: revert;
+}
+
+/**
+ * Step 2.1. Apply theme from astro/docs (Sidebar.astro)
+ * 
+ * Source: https://github.com/withastro/docs/blob/main/src/components/starlight/Sidebar.astro
+ *
+ * 
+ * Changes:
+ * - Remove astro-only selectors (`.fallback`, `.desktop-footer`, `.sidebar-pane`)  
+ * - Map classes:  
+ *   - `.tabbed-sidebar .tab-list` → `ul.starlight-sidebar-topics.starlight-sidebar-topics.starlight-sidebar-topics`  
+ *   - `.tabbed-sidebar` → `ul.starlight-sidebar-topics.starlight-sidebar-topics`  
+ *   - `.tab-item` → `.starlight-sidebar-topics li`  
+ *   - `.icon` → `.starlight-sidebar-topics-icon`  
+ *   - `a[aria-selected='true']` → `a.starlight-sidebar-topics-current`  
+ * - Remove `:global()` wrappers since we’re in global CSS already  
+ *
+ * Note: We use repeating classname specificity to simulate the two divs in astro/docs for topics to our one.
+ */
+
+/* Styles for the custom tab switcher. */
+ul.starlight-sidebar-topics.starlight-sidebar-topics {
+	
 	/* Layout variables */
 	--tab-switcher-border-width: 1px;
 	--tab-switcher-padding: calc(0.25rem - var(--tab-switcher-border-width));
@@ -133,122 +332,116 @@ The file below resets styles from starlight-sidebar-topics with overrides inspir
 	--tab-item-background-color--hover: var(--sl-color-gray-6);
 	--tab-item-background-color--active: var(--sl-color-black);
 }
-
 /* Dark theme variations */
-[data-theme='dark'] .starlight-sidebar-topics {
+[data-theme='dark'] ul.starlight-sidebar-topics.starlight-sidebar-topics {
 	--tab-switcher-text-color: var(--sl-color-gray-2);
 	--tab-switcher-icon-color: var(--sl-color-gray-3);
 	--tab-item-background-color--hover: var(--sl-color-gray-5);
 }
 
-@media (min-width: 50rem) {
+@media (min-width: 50rem) {	
 	/* Dark theme variations with the desktop sidebar visible */
-	[data-theme='dark'] .starlight-sidebar-topics {
+	[data-theme='dark'] ul.starlight-sidebar-topics.starlight-sidebar-topics {		
 		--tab-switcher-background-color: var(--sl-color-black);
 		--tab-item-background-color--hover: var(--sl-color-gray-6);
 		--tab-item-background-color--active: var(--sl-color-gray-6);
 	}
 }
 
-/* ---------------- OVERRIDES ---------------- */
-
-/* Reset styles from starlight-sidebar-topics (HiDeoo/Topics.astro) with Astro Docs */
-
-ul.starlight-sidebar-topics {
-	/* from upstream */
-	list-style: none;
-	padding: var(--tab-switcher-padding);
-	
+ul.starlight-sidebar-topics.starlight-sidebar-topics.starlight-sidebar-topics {	
 	border: var(--tab-switcher-border-width) solid var(--tab-switcher-border-color);
 	border-radius: var(--tab-switcher-border-radius);
 	display: flex;
-	flex-direction: column;		
+	flex-direction: column;
 	gap: 0.25rem;
-	background-color: var(--tab-switcher-background-color);				
-	margin-bottom: 0;
+	padding: var(--tab-switcher-padding);
+	background-color: var(--tab-switcher-background-color);
+	margin-bottom: 1.5rem;
 }
 
-/* This selector is difficult, any other combination will result in double margins */
-ul.starlight-sidebar-topics::after {
-	/* from upstream */
-    content: none;
-    display: none;
-	margin-top: 0;
-}
-
-ul.starlight-sidebar-topics li {
-	/* from upstream */
-	overflow-wrap: anywhere;
-}
-
-ul.starlight-sidebar-topics li + li {
-	/* from upstream */
-	margin-top: 0;
-}
-
-ul.starlight-sidebar-topics li a {
-	/* from upstream */
-	align-items: center;		
-	color: var(--tab-switcher-text-color);
-	display: flex;
-	font-size: inherit;
-	font-weight: 600;		
-	gap: 0.5rem;
-	line-height: var(--sl-line-height-headings);
-	padding: calc(0.5rem - var(--tab-switcher-border-width));
-	text-decoration: none;
-
+.starlight-sidebar-topics li a {	
 	border: var(--tab-switcher-border-width) solid transparent;
 	border-radius: var(--tab-item-border-radius);
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+	padding: calc(0.5rem - var(--tab-switcher-border-width));	
 	background-clip: padding-box;
-	transition: background-color 0.2s, color 0.2s;		
+	line-height: var(--sl-line-height-headings);
+	text-decoration: none;
+	color: var(--tab-switcher-text-color);
+	font-weight: 600;
 }
 
-ul.starlight-sidebar-topics a:hover {
-	/* from upstream */
+.starlight-sidebar-topics li a:hover {	
 	color: var(--tab-switcher-text-color--active);
-
 	background-color: var(--tab-item-background-color--hover);
 }
-
-ul.starlight-sidebar-topics a.starlight-sidebar-topics-current {
-	/* from upstream */
+.starlight-sidebar-topics li a.starlight-sidebar-topics-current {	
+	border-color: var(--tab-switcher-border-color);
 	color: var(--tab-switcher-text-color--active);
-
-	border-color: var(--tab-switcher-border-color);	
 	background-color: var(--tab-item-background-color--active);
 }
 
-/* Icon wrapper */
-ul.starlight-sidebar-topics .starlight-sidebar-topics-icon {
-	/* from upstream */
-	align-items: center;
-	border: none;
-	display: flex;		
-	justify-content: center;
-	padding: 0;
-			
+.starlight-sidebar-topics .starlight-sidebar-topics-icon {	
 	margin: 0.25rem;
 	color: var(--tab-switcher-icon-color);
-	transition: background-color 0.2s, border-color 0.2s;
 }
-
-ul.starlight-sidebar-topics a:hover .starlight-sidebar-topics-icon {
-	/* from upstream */
-	background-color: inherit;
-    border-color: inherit;
+.starlight-sidebar-topics li a:hover .starlight-sidebar-topics-icon {	
 	color: inherit;
 }
-
-ul.starlight-sidebar-topics a.starlight-sidebar-topics-current .starlight-sidebar-topics-icon {
-	background-color: inherit;
-    border-color: inherit;
+.starlight-sidebar-topics li a.starlight-sidebar-topics-current .starlight-sidebar-topics-icon {
 	color: var(--tab-switcher-icon-color--active);
 }
 
-ul.starlight-sidebar-topics .starlight-sidebar-topics-badge {
-	/* from upstream */
-	margin-inline-start: 0.25em;
+
+/**
+ * Step 2.2. Apply theme from astro/docs (TabbedContent.astro)
+ * 
+ * Source: https://github.com/withastro/docs/blob/main/src/components/tabs/TabbedContent.astro
+ *
+ * Changes:
+ * - Map class: `.tab-list` → `ul.starlight-sidebar-topics`  
+ * - Remove `.tab-list--styled` and `.panels--styled` (not used here) 
+ * - `.tabbed-sidebar` → `.starlight-sidebar-topics.starlight-sidebar-topics`
+ *
+ * Note: Same classname simulation as above. Part of this will end up overwriten.
+ */
+ul.starlight-sidebar-topics {	
+	list-style: none;
+	padding: 0;
+}
+
+
+/**
+ * Step 2.3.  Apply theme from astro/docs (TabListItem.astro)
+ * 
+ * Source: https://github.com/withastro/docs/blob/main/src/components/tabs/TabListItem.astro
+ * 
+ * No styles currently defined here → nothing to apply. 
+ */
+ 
+  
+ /**
+  * Step 3. Adapt for use with Starlight styles and starlight-sidebar-topics markup
+  *
+  * - Starlight handles bottom margin differently, so we remove it here  
+  * - The icon is wrapped in a `<div>` in starlight-sidebar-topics (vs inline in Astro Docs)
+  *	  By default, that `<div>` is `display: block; align-items: normal;` and adds extra height.
+  *   We force it to inherit flex styles from the parent `<a>` to match Astro Docs.
+  */
+ul.starlight-sidebar-topics.starlight-sidebar-topics.starlight-sidebar-topics {
+	margin-bottom: 0;
+}
+
+.starlight-sidebar-topics li {	
+	overflow-wrap: anywhere;
+}
+
+.starlight-sidebar-topics .starlight-sidebar-topics-icon {
+	align-items: inherit;
+	display: inherit;
+	justify-content: center;
 }
 ```
 
