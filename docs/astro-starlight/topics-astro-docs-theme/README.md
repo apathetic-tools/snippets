@@ -588,7 +588,6 @@ Append the following styles after the <ul> block. These are adapted from Astro D
 		text-decoration: none;
 		color: var(--tab-switcher-text-color);
 		font-weight: 600;		
-		transition: background-color 0.2s, color 0.2s;		
   }
 
 	a:hover {
@@ -608,7 +607,6 @@ Append the following styles after the <ul> block. These are adapted from Astro D
 		align-items: center;
 		margin: 0.25rem;
 		color: var(--tab-switcher-icon-color);
-    transition: background-color 0.2s, border-color 0.2s;
   }  
 
 	a:hover .starlight-sidebar-topics-icon {
