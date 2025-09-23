@@ -22,6 +22,8 @@ We've organized the Starlight built-in icons into categories for you below.
 
 ### Navigation & Arrows
 
+General Use
+
 | |  |  |  | |
 |:---:|:------:|:------:|:------:|:---:|
 | <div style="text-align:center"><img src="./assets/icons/up-caret.svg" width="32" height="32" alt="up-caret icon"></div> | <div style="text-align:center"><img src="./assets/icons/down-caret.svg" width="32" height="32" alt="down-caret icon"></div> | <div style="text-align:center"><img src="./assets/icons/left-caret.svg" width="32" height="32" alt="left-caret icon"></div> | <div style="text-align:center"><img src="./assets/icons/right-caret.svg" width="32" height="32" alt="right-caret icon"></div> |
@@ -32,6 +34,8 @@ We've organized the Starlight built-in icons into categories for you below.
 | <div style="text-align:center">&nbsp;&nbsp;&nbsp;&nbsp;bars <sup title="Menu bars / hamburger icon">ℹ</sup></div> | <div style="text-align:center">&nbsp;&nbsp;&nbsp;&nbsp;forward-slash <sup title="Forward slash symbol icon">ℹ</sup></div> | <div style="text-align:center">&nbsp;&nbsp;&nbsp;&nbsp;close <sup title="Close / X icon">ℹ</sup></div> |   |
 
 ### Actions & Editing
+
+General Use
 
 | |  |  |  | |
 |:---:|:------:|:------:|:------:|:---:|
@@ -47,6 +51,8 @@ We've organized the Starlight built-in icons into categories for you below.
 | <div style="text-align:center">&nbsp;&nbsp;&nbsp;&nbsp;approve-check-circle <sup title="Checkmark inside a circle / approved icon">ℹ</sup></div> | <div style="text-align:center">&nbsp;&nbsp;&nbsp;&nbsp;translate <sup title="Translation / language icon">ℹ</sup></div> | <div style="text-align:center">&nbsp;&nbsp;&nbsp;&nbsp;heart <sup title="Heart / like / favorite icon">ℹ</sup></div> |   |
 
 ### Content, Status & System
+
+General Use
 
 | |  |  |  | |
 |:---:|:------:|:------:|:------:|:---:|

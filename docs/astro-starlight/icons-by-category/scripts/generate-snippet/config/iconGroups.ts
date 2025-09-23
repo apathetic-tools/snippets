@@ -3,6 +3,7 @@ import { IconGroups } from './types.ts';
 export const iconGroups: IconGroups = [
 	{
 		group: 'Navigation & Arrows',
+		header: 'General Use',
 		icons: [
 			'up-caret',
 			'down-caret',
@@ -19,6 +20,7 @@ export const iconGroups: IconGroups = [
 	},
 	{
 		group: 'Actions & Editing',
+		header: 'General Use',
 		icons: [
 			'pencil',
 			'pen',
@@ -43,6 +45,7 @@ export const iconGroups: IconGroups = [
 	},
 	{
 		group: 'Content, Status & System',
+		header: 'General Use',
 		icons: [
 			'moon',
 			'sun',
