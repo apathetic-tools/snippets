@@ -8,20 +8,9 @@ This [snippet](https://github.com/apathetic-tools/snippets) *(but not the icons)
 
 - ✅ Emoji can stand in for icons anywhere that accepts text
 - ⚠️ Appearance may differ across platforms; use SVGs for a **consistent look**  
-- B/W or monochrome icons are often rendered in color on some platforms.
+- *B/W* or monochrome icons are often rendered in color on some platforms.
 
-> [!TIP]
-> If writing on GitHub, you can use convenient shortcodes for many emoji. See the [Github Emoji Cheat Sheet](https://github.com/ikatyang/emoji-cheat-sheet/blob/github-actions-auto-update/README.md) to check which ones are supported. You can also paste UTF-8 emoji directly without using shortcodes.
-
-> [!NOTE]
-> See the [Unicode Full Emoji List v17.0 (mirror)](https://unicode-org.github.io/emoji/emoji/charts-17.0/emoji-list.html) for a complete list of 4,802 characters, with more coming out all the time. 
-
-We've highlighted some of our favourites here.
-
-## What are some alternatives?
-
-> [!TIP]
-> See our [Astro Starlight Icons by Category Snippet](../../docs/astro-starlight/icons-by-category/README.md) for inspiration when using that framework for even more options including SVG icons.
+We've highlighted some of our favourites here!
 
 ## Navigation & Arrows
 
@@ -82,6 +71,17 @@ We've highlighted some of our favourites here.
 🚀 Rocket / Launch, 🏆 Trophy, 🎯 Target, 🧩 Puzzle, ❤️ Heart / Favorite, 💔 Broken Heart, 🌙 Moon, ☀️ Sun, 🌟 Glowing Star, 🎉 Party / Celebration, 🎁 Gift, 😎 Sunglasses, 🥳 Party Face, 😐 Apathy, 🦥 Sloth
 
 *B/W:* ⚝ Empty 5-Point Star, ♥ / ♡ Heart, ☾ Moon, ☀ Sun
+
+## What are some alternatives?
+
+> [!TIP]
+> If writing on GitHub, you can use convenient shortcodes for many emoji. See the [Github Emoji Cheat Sheet](https://github.com/ikatyang/emoji-cheat-sheet/blob/github-actions-auto-update/README.md) to check which ones are supported. You can also paste UTF-8 emoji directly without using shortcodes.
+
+> [!TIP]
+> See our [Astro Starlight Icons by Category Snippet](../../docs/astro-starlight/icons-by-category/README.md) for inspiration when using that framework for even more options including SVG icons.
+
+> [!NOTE]
+> See the [Unicode Full Emoji List v17.0 (mirror)](https://unicode-org.github.io/emoji/emoji/charts-17.0/emoji-list.html) for a complete list of 4,802 characters, with more coming out all the time. 
 
 ---
 
