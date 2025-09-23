@@ -10,7 +10,7 @@ This [snippet](https://github.com/apathetic-tools/snippets) *(but not the icons)
 - ⚠️ Appearance may differ across platforms; use SVGs for a **consistent look**  
 - B/W or monochrome icons are often rendered in color on some platforms.
 
-If writing on GitHub, you can use convenient shortcodes for many emoji. See the [Github Eomji Cheat Sheet](https://github.com/ikatyang/emoji-cheat-sheet/blob/github-actions-auto-update/README.md) to check which ones are supported. You can also paste UTF-8 emoji directly without using shortcodes.
+If writing on GitHub, you can use convenient shortcodes for many emoji. See the [Github Emoji Cheat Sheet](https://github.com/ikatyang/emoji-cheat-sheet/blob/github-actions-auto-update/README.md) to check which ones are supported. You can also paste UTF-8 emoji directly without using shortcodes.
 
 See the [Unicode Full Emoji List v17.0 (mirror)](https://unicode-org.github.io/emoji/emoji/charts-17.0/emoji-list.html) for a complete list of 4,802 characters, with more coming out all the time. 
 
