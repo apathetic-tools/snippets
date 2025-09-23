@@ -21,11 +21,12 @@ The [Astro Icons](https://www.astroicon.dev/) integration lets you:
 > [!NOTE]  
 > These icons **won’t automatically work** with built-in Starlight components. Use them in your own components or the alternative [Icon component](https://www.astroicon.dev/guides/components).  
 
-- 🔄 You *can* override Starlight components to replace built-in icons with your custom icons using [component overrides](https://starlight.astro.build/guides/overriding-components/).
+> [!TIP]
+> You *can* override Starlight components to replace built-in icons with your custom icons using [component overrides](https://starlight.astro.build/guides/overriding-components/).
 
 ### 📦 Starlight Markdown Blocks integration
 
-The [Starlight Markdown Blocks](https://delucis.github.io/starlight-markdown-blocks/) integration overrides the starlight Aside component and changed it to allow:
+The [Starlight Markdown Blocks](https://delucis.github.io/starlight-markdown-blocks/) integration overrides the starlight Aside component and changes it to allow:
 
 - 🏠 Use local custom icons  
 - 🛠️ Use any Icon component including alternatives
@@ -42,7 +43,8 @@ See our [UTF-8 Emoji Icons by Category](../../../../docs/text/utf8-emoji-icons-b
 
 🎉 With these options, your site will be visually polished in no time!
 
-Note: Part of this snippet is auto-generated. Refer to [CONTRIBUTING.md](./CONTRIBUTING.md) to make updates.
+> [!TIP]
+> Part of this snippet is auto-generated. Refer to [CONTRIBUTING.md](./CONTRIBUTING.md) to make updates.
 
 > **Inspired by / Attribution:**  
 > This snippet was inspired by the following MIT-licensed sources:

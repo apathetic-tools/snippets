@@ -1,19 +1,20 @@
 # Starlight Icons by Category ✨
 
-[//]: # (Note: This /README.md is auto-generated. Do not edit manually; see CONTRIBUTING.md.)
+<!-- WARNING: This /README.md is auto-generated. Do not edit manually; see CONTRIBUTING.md. -->
 
 🖌️ Quickly find the perfect icon for your Astro Starlight components.
 
 This [snippet](https://github.com/apathetic-tools/snippets) *(but not the icons)* was created by 😐 [Apathetic Tools](https://github.com/apathetic-tools) · [MIT License](../../../../LICENSE).
 
-> [!IMPORTANT]  
+> [!Important]  
 > Many icons are trademarked or strongly tied to a specific brand, product, or technology. Only use them when representing their intended meaning.
 
 ## 💡Why categorize them? What are the alternatives?
 
 The [Astro Starlight](https://starlight.astro.build/) integration only supports built-in icon types. Its documentation includes a complete [built-in icon reference](https://starlight.astro.build/reference/icons/#all-icons), but with hundreds of icons—many of which cannot be used freely—it can be difficult to find the one you need.
 
-> 🔍 For alternate solutions—supporting any custom SVG icon, icon set, or even UTF-8 Emoji—see our tips after the categorized built-in icons list.
+> [!TIP]
+> For alternate solutions—supporting any custom SVG icon, icon set, or even UTF-8 Emoji—see our tips after the categorized built-in icons list.
 
 We've organized the Starlight built-in icons into categories for you below.
 
@@ -253,11 +254,12 @@ The [Astro Icons](https://www.astroicon.dev/) integration lets you:
 > [!NOTE]  
 > These icons **won’t automatically work** with built-in Starlight components. Use them in your own components or the alternative [Icon component](https://www.astroicon.dev/guides/components).  
 
-- 🔄 You *can* override Starlight components to replace built-in icons with your custom icons using [component overrides](https://starlight.astro.build/guides/overriding-components/).
+> [!TIP]
+> You *can* override Starlight components to replace built-in icons with your custom icons using [component overrides](https://starlight.astro.build/guides/overriding-components/).
 
 ### 📦 Starlight Markdown Blocks integration
 
-The [Starlight Markdown Blocks](https://delucis.github.io/starlight-markdown-blocks/) integration overrides the starlight Aside component and changed it to allow:
+The [Starlight Markdown Blocks](https://delucis.github.io/starlight-markdown-blocks/) integration overrides the starlight Aside component and changes it to allow:
 
 - 🏠 Use local custom icons  
 - 🛠️ Use any Icon component including alternatives
@@ -274,7 +276,7 @@ See our [UTF-8 Emoji Icons by Category](../../../../docs/text/utf8-emoji-icons-b
 
 🎉 With these options, your site will be visually polished in no time!
 
-> [!TIP]  
+> [!TIP]
 > Part of this snippet is auto-generated. Refer to [CONTRIBUTING.md](./CONTRIBUTING.md) to make updates.
 
 > **Inspired by / Attribution:**  
