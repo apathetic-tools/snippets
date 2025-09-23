@@ -109,7 +109,7 @@ The `sidebar-topics-overrides.css` file below resets styles from *starlight-side
 Our example does so methodically so that you can more easily copy-paste verbatim from the source files into the overrides if something changes upstream.
 
 > [!NOTE]
-> If you prefer all the classes merged into a single set of element modifications, see our [merged sidebar-topics-overrides.css](assets/sidebar-topics-overrides-merged.css) example instead. It is much shorter but may be more difficult to maintain over a long period of time.
+> If you prefer all the classes merged into a single set of element modifications, see our [merged sidebar-topics-overrides.css](assets/sidebar-topics-overrides-merged.css) example instead. It is much shorter but may be more difficult to maintain over long periods of time.
 
 `src/styles/sidebar-topics-overrides.css`
 ```css
