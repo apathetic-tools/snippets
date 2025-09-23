@@ -687,7 +687,6 @@ Our site uses **Hideoo/starlight-sidebar-topics** (SST) for topics, alongside th
   - *(regular sidebar)* [starlight/components/Sidebar.astro](https://github.com/withastro/starlight/blob/main/packages/starlight/components/Sidebar.astro)
     - [starlight/components/SidebarPersister.astro](https://github.com/withastro/starlight/blob/main/packages/starlight/components/SidebarPersister.astro)
       - *(actual regular sidebar listing)* [starlight/components/SidebarSublist.astro](https://github.com/withastro/starlight/blob/main/packages/starlight/components/SidebarSublist.astro)
-	    - ...
 
 
 > SST topics list sits **next to** the regular sidebar; it’s not nested.
