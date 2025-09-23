@@ -74,14 +74,17 @@ We've highlighted some of our favourites here!
 
 ## What are some alternatives?
 
-> [!TIP]
-> If writing on GitHub, you can use convenient shortcodes for many emoji. See the [Github Emoji Cheat Sheet](https://github.com/ikatyang/emoji-cheat-sheet/blob/github-actions-auto-update/README.md) to check which ones are supported. You can also paste UTF-8 emoji directly without using shortcodes.
+### GitHub
 
-> [!TIP]
-> See our [Astro Starlight Icons by Category Snippet](../../docs/astro-starlight/icons-by-category/README.md) for inspiration when using that framework for even more options including SVG icons.
+If writing on GitHub, you can use convenient shortcodes for many emoji. See the [Github Emoji Cheat Sheet](https://github.com/ikatyang/emoji-cheat-sheet/blob/github-actions-auto-update/README.md) to check which ones are supported. You can also paste UTF-8 emoji directly without using shortcodes.
 
-> [!NOTE]
-> See the [Unicode Full Emoji List v17.0 (mirror)](https://unicode-org.github.io/emoji/emoji/charts-17.0/emoji-list.html) for a complete list of 4,802 characters, with more coming out all the time. 
+### Astro Starlight
+
+See our [Astro Starlight Icons by Category Snippet](../../docs/astro-starlight/icons-by-category/README.md) for inspiration when using that framework for even more options including SVG icons.
+
+### Full List
+
+See the [Unicode Full Emoji List v17.0 (mirror)](https://unicode-org.github.io/emoji/emoji/charts-17.0/emoji-list.html) for a complete list of 4,802 characters, with more coming out all the time. 
 
 ---
 
