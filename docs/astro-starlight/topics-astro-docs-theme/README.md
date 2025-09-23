@@ -116,28 +116,28 @@ Our example does so methodically so that you can more easily copy-paste verbatim
 /**
  * Astro Docs theme port for starlight-sidebar-topics
  * 
- * See following guide for instructions on how to easily update this file. 
- * inspired by Apathetic Tools · MIT
+ * Instructions:
+ * - Follow the step-by-step guide below to update this file
+ *
+ * Inspired by Apathetic Tools · MIT
  * https://github.com/apathetic-tools/snippets/blob/main/docs/astro-starlight/topics-astro-docs-theme
  * 
  * Theme: Astro Docs · MIT
- * Ref: https://github.com/withastro/docs
+ * https://github.com/withastro/docs
  */
 
 /**
  * Step 1. Reset HiDeoo/starlight-sidebar-topics
  *
- * Components with styles:
- * - starlight-sidebar-topics/components/Topics.astro
- *   https://github.com/HiDeoo/starlight-sidebar-topics/blob/main/packages/starlight-sidebar-topics/components/Topics.astro
+ * Source: starlight-sidebar-topics/components/Topics.astro
+ * https://github.com/HiDeoo/starlight-sidebar-topics/blob/main/packages/starlight-sidebar-topics/components/Topics.astro
  *
- * Notes: 
- * - `[data-theme=...]` must always remain the first selector   
- * - Remove `:global()` wrappers since we’re in global CSS already   
- * - Component styles require specificity → prefix `.starlight-sidebar-topics`  
- * - For the `ul` itself, use `ul.starlight-sidebar-topics` (not `.starlight-sidebar-topics ul`)  
+ * - Prefix with `.starlight-sidebar-topics` for specificity
+ * - Use `ul.starlight-sidebar-topics` (not `.starlight-sidebar-topics ul`) for the root
+ * - Drop `:global()` wrappers (already global CSS)
+ * - Use `revert` to reset original styles where possible
  *
- * We comment the originals for reference, then add resets with `revert` where possible.
+ * Note: `[data-theme=...]` selectors must always remain first.
  */
 ul.starlight-sidebar-topics {
 	/* list-style: none;
@@ -238,31 +238,21 @@ ul.starlight-sidebar-topics::after {
 /**
  * Step 2. Apply theme from astro/docs 
  *
- * NOTE: Due to difference in markup between `Astro Docs` and `starlight-sidebar-topics`:
- * - We need to merge styles of `.tabbed-sidebar` and `.tab-list` into a single `ul.starlight-sidebar-topics`.
- *   This means things like padding and margins need to be added together, and we need to be careful what will override what.
+ * Component #1: withastro/docs/components/starlight/Sidebar.astro
+ * https://github.com/withastro/docs/blob/main/src/components/starlight/Sidebar.astro
+ * - Remove Astro-only selectors: `.fallback`, `.desktop-footer`, `.sidebar-pane`
+ * - Merge `.tabbed-sidebar` + `.tab-list` → `ul.starlight-sidebar-topics`
+ * - `.tab-item` → `.starlight-sidebar-topics li`
+ * - `.icon` → `.starlight-sidebar-topics-icon`
+ * - `a[aria-selected="true"]` → `a.starlight-sidebar-topics-current`
+  * - Drop `:global()` wrappers (already global CSS)
  *
- * Components with styles:
- *
- * Component #1: components/starlight/Sidebar.astro
- * Source: https://github.com/withastro/docs/blob/main/src/components/starlight/Sidebar.astro
- *
- * Changes:
- * - Remove astro-only selectors (`.fallback`, `.desktop-footer`, `.sidebar-pane`)  
- * - Remove `:global()` wrappers since we’re in global CSS already  
- * - Map classes:  
- *   - `.tabbed-sidebar .tab-list` → merge into `ul.starlight-sidebar-topics`  
- *   - `.tabbed-sidebar` → merge into `ul.starlight-sidebar-topics`  
- *   - `.tab-item` → `.starlight-sidebar-topics li`  
- *   - `.icon` → `.starlight-sidebar-topics-icon`  
- *   - `a[aria-selected='true']` → `a.starlight-sidebar-topics-current`  
- *
- * Component #2: components/tabs/TabbedContent.astro
+ * Component #2: withastro/docs/components/tabs/TabbedContent.astro
  * Source: https://github.com/withastro/docs/blob/main/src/components/tabs/TabbedContent.astro
+ * - `.tab-list` → merge into `ul.starlight-sidebar-topics`
+ * - Remove `.tab-list--styled`, `.panels--styled`
  *
- * Changes:
- * - Remove `.tab-list--styled` and `.panels--styled` (not used here) 
- * - Map class: `.tab-list` → merge into `ul.starlight-sidebar-topics`  
+ * Note: add padding/margins together when merging  `.tabbed-sidebar` and `.tab-list`.
  */
 
 /* Styles for the custom tab switcher. */
@@ -353,12 +343,12 @@ ul.starlight-sidebar-topics {
 }
 
 /**
- * Step 3. Adapt for use with Starlight styles and starlight-sidebar-topics markup
+ * Step 3. Adapt for Starlight + starlight-sidebar-topics markup
  *
- * - Starlight handles bottom margin differently, so we remove astro/docs'  
- * - The icon is wrapped in a `<div>` in starlight-sidebar-topics (vs inline in astro/docs)
- *	  By default, that `<div>` is `display: block; align-items: normal;` and adds extra height.
- *   We force it to inherit flex styles from the parent `<a>` to match astro/docs.
+ * - Remove bottom margins from astro/docs (Starlight handles spacing differently)
+ * - Icons are wrapped in a <div> in starlight-sidebar-topics (vs inline in astro/docs)
+ *   - Default: `display: block; align-items: normal;` → adds extra height
+ *   - Fix: force the `<div>` to inherit flex styles from the parent `<a>`
  */
 ul.starlight-sidebar-topics {
 	margin-bottom: 0;
