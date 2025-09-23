@@ -304,10 +304,10 @@ export const iconGroups: IconGroups = [
 			'farcaster',
 			'linkedin',
 			'mastodon',
-			'nostr',
-			'threads',
-			'twitter',
+			'nostr',			
+			'twitter', 
 			'x.com',
+			'threads', // so twitter and x are beside each other
 		],
 	},
 	{
