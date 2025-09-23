@@ -10,51 +10,54 @@ This [snippet](https://github.com/apathetic-tools/snippets) *(but not the icons)
 - ⚠️ Appearance may differ across platforms; use SVGs for a **consistent look**  
 - B/W or monochrome icons are often rendered in color on some platforms.
 
-If writing on GitHub, you can use convenient shortcodes for many emoji. See the [Github Emoji Cheat Sheet](https://github.com/ikatyang/emoji-cheat-sheet/blob/github-actions-auto-update/README.md) to check which ones are supported. You can also paste UTF-8 emoji directly without using shortcodes.
+> [!TIP]
+> If writing on GitHub, you can use convenient shortcodes for many emoji. See the [Github Emoji Cheat Sheet](https://github.com/ikatyang/emoji-cheat-sheet/blob/github-actions-auto-update/README.md) to check which ones are supported. You can also paste UTF-8 emoji directly without using shortcodes.
 
-See the [Unicode Full Emoji List v17.0 (mirror)](https://unicode-org.github.io/emoji/emoji/charts-17.0/emoji-list.html) for a complete list of 4,802 characters, with more coming out all the time. 
+> [!NOTE]
+> See the [Unicode Full Emoji List v17.0 (mirror)](https://unicode-org.github.io/emoji/emoji/charts-17.0/emoji-list.html) for a complete list of 4,802 characters, with more coming out all the time. 
 
 We've highlighted some of our favourites here.
 
 ## What are some alternatives?
 
-> 🔍 See our [Astro Starlight Icons by Category Snippet](../../docs/astro-starlight/icons-by-category/README.md) for inspiration when using that framework for even more options including SVG icons.
+> [!TIP]
+> See our [Astro Starlight Icons by Category Snippet](../../docs/astro-starlight/icons-by-category/README.md) for inspiration when using that framework for even more options including SVG icons.
 
 ## Navigation & Arrows
 
 🏠 Home, 🌐 Globe / Web, ☰ Hamburger / Menu, 📍 Round Pin / Location, 👤 Profile, 👥 Two Users / Community, ⚙️ Settings, 🏢 Organization
 
-B/W: ⌂ House, ⚙ Settings, ◎ Pin, ≡ Sm Hamburger
+*B/W:* ⌂ House, ⚙ Settings, ◎ Pin, ≡ Sm Hamburger
 
 ⬆️ Up, ⬇️ Down, ⬅️ Left, ➡️ Right, ↗️ Up-Right, ↘️ Down-Right, ↖️ Up-Left, ↙️ Down-Left, 🔼 Triangle Up, 🔽 Triangle Down
 
-B/W: ↑ Up, ↓ Down, ← Left, → Right, ↗ Up-Right, ↘ Down-Right, ↖ Up-Left, ↙ Down-Left, ↕ Up-Down, ↔ Left-Right, ▲ / △ Triangle Up, ▼ / ▽ Triangle Down, ◀ / ◁ / ❮ Left Arrow, ▶ / ▷ / ❯ / ➤ Right Arrow
+*B/W:* ↑ Up, ↓ Down, ← Left, → Right, ↗ Up-Right, ↘ Down-Right, ↖ Up-Left, ↙ Down-Left, ↕ Up-Down, ↔ Left-Right, ▲ / △ Triangle Up, ▼ / ▽ Triangle Down, ◀ / ◁ / ❮ Left Arrow, ▶ / ▷ / ❯ / ➤ Right Arrow
 
 ## Actions & Status
 
 ✏️ Pencil / Edit, 🔍 Magnifying Glass / Search, 🔎 Magnifying Glass Right 📝 Memo / Note, 📌 Pin, 🔧 Wrench, 🛠️ Hammer & Wrench, 🔒 Lock, 🔓 Unlock, 🔑 Key / Access, ⌛ Hourglass, 
 
-B/W: ✎ Pencil, 🖹 Document, 🗝 Old Key, 🛠 / ⚒ Hammer, ⧖ Hourglass
+*B/W:* ✎ Pencil, 🖹 Document, 🗝 Old Key, 🛠 / ⚒ Hammer, ⧖ Hourglass
 
 ⏮️ Previous, ⏪ Rewind, ▶️ Play, ⏹️ Stop, , ⏭️ Next, 🔄 Refresh, 🔁 Repeat, 🔀 Shuffle
 
-B/W: ⏮ Previous, ⏴Sm Previous, ▶ Play, ⏹ Stop, ⏵ Sm Next, ⏭ Next, ⟳ Repeat, ⇄ Shuffle
+*B/W:* ⏮ Previous, ⏴Sm Previous, ▶ Play, ⏹ Stop, ⏵ Sm Next, ⏭ Next, ⟳ Repeat, ⇄ Shuffle
 
 ✅ Check / Success, ✔️ Heavy Check, ❌ Cross / Error, 👍 Thumbs Up / Approval, 👉 Point Right / Call-to-action, 👆 Point Up, ⚠️ Warning, 🛑 Stop, ⚡ Lightning / Quick, 
 
-B/W: ☐ Empty checkbox, ☒ / ▣ Checkbox, ✓ Check Mark, ✗ Diag Cross, ✖ / X Cross, ◯ / ◎ Empty Circle, ◉ Checked Circle, ⚠ Warning , ⬛ / ■ Stop
+*B/W:* ☐ Empty checkbox, ☒ / ▣ Checkbox, ✓ Check Mark, ✗ Diag Cross, ✖ / X Cross, ◯ / ◎ Empty Circle, ◉ Checked Circle, ⚠ Warning , ⬛ / ■ Stop
 
 ## Shapes & Indicators
 
 ℹ️ Info, ❗Alert, ⭐ Star, ✨ Sparkles, 💡 Light Bulb, 🔥 Fire / Hot, 🟢 Green Circle, 🟡 Yellow Circle, 🔴 Red Circle, 🔵 Blue Circle, ⚪ White Circle, ⚫ Black Circle, 🟠 Orange Circle, 🟣 Purple Circle, ⚖️ Scales / Rules, 🖌️ Paintbrush / Design, 🧪 Test Tube / Labs
 
-B/W: ℹ Info, ★ Star, ☆ Empty Star, ✚ Heavy Plus, ✦ Four-Pointed Star, ✧ Empty Four-Pointed Star, ○ Small Circle, ⚖ Scales, 🖌 Paintbrush, ≈ Aproximately, ± Plus-Minus, ∞ Infinity, ⚛ Atom
+*B/W:* ℹ Info, ★ Star, ☆ Empty Star, ✚ Heavy Plus, ✦ Four-Pointed Star, ✧ Empty Four-Pointed Star, ○ Small Circle, ⚖ Scales, 🖌 Paintbrush, ≈ Aproximately, ± Plus-Minus, ∞ Infinity, ⚛ Atom
 
 ## Communication & Social
 
 💬 Speech Bubble, 🗨️ Left Speech Bubble, 📧 Email, 📞 Phone, 📨 Incoming Envelope, 📩 Outgoing Envelope, 🆘 SOS / Alert, 📣 / 📢 Megaphone / Announcement, 
 
-B/W: ☎ Phone, ✉ Envelope
+*B/W:* ☎ Phone, ✉ Envelope
 
 👋 Wave, 🙌 Raise, 🤝 Handshake, 🙋 Hand Raise, 👏 Clapping, ✍ Writting, ✋ Stop
 
@@ -66,19 +69,19 @@ B/W: ☎ Phone, ✉ Envelope
 
 🎵 Music / Audio, 🎶 Musical Notes, 🎥 Video / Camera, 🎬 Clapperboard, 🖼️ Picture / Image, 📷 Camera
 
-B/W: ♬ / ♪ / ♩ Music, 🖼 Picture
+*B/W:* ♬ / ♪ / ♩ Music, 🖼 Picture
 
 ## Tech & Tools
 
 🖥️ Desktop Computer, 💻 Laptop, 🖱️ Mouse, ⌨️ Keyboard, 🖨️ Printer, 📡 Satellite / WiFi, 📟 Pager, 🧮 Abacus, 🔊 Speaker, ⌚ Watch
 
-B/W: 🖥 Desktop, 🖱 Mouse, ⌨ Keyboard
+*B/W:* 🖥 Desktop, 🖱 Mouse, ⌨ Keyboard
 
 ## Fun & Misc
 
 🚀 Rocket / Launch, 🏆 Trophy, 🎯 Target, 🧩 Puzzle, ❤️ Heart / Favorite, 💔 Broken Heart, 🌙 Moon, ☀️ Sun, 🌟 Glowing Star, 🎉 Party / Celebration, 🎁 Gift, 😎 Sunglasses, 🥳 Party Face, 😐 Apathy, 🦥 Sloth
 
-B/W: ⚝ Empty 5-Point Star, ♥ / ♡ Heart, ☾ Moon, ☀ Sun
+*B/W:* ⚝ Empty 5-Point Star, ♥ / ♡ Heart, ☾ Moon, ☀ Sun
 
 ---
 
@@ -86,6 +89,7 @@ B/W: ⚝ Empty 5-Point Star, ♥ / ♡ Heart, ☾ Moon, ☀ Sun
 
 > **Inspired by / Attribution:**  
 > This snippet was inspired by the following sources:
+> - github: [Github Emoji Cheat Sheet](https://github.com/ikatyang/emoji-cheat-sheet/blob/github-actions-auto-update/README.md)
 > - unicode: [Unicode Full Emoji List v17.0 (mirror)](https://unicode-org.github.io/emoji/emoji/charts-17.0/emoji-list.html)
 >
 > ✨ *ChatGPT was used to help draft language, formatting, and code — plus we just love em dashes.*
