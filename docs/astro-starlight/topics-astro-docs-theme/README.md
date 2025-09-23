@@ -683,7 +683,8 @@ Our site uses **Hideoo/starlight-sidebar-topics** (SST) for topics, alongside th
     - [starlight/components/SidebarPersister.astro](https://github.com/withastro/starlight/blob/main/packages/starlight/components/SidebarPersister.astro)
       - *(actual regular sidebar listing)* [starlight/components/SidebarSublist.astro](https://github.com/withastro/starlight/blob/main/packages/starlight/components/SidebarSublist.astro)
 	    - ...
- 
+
+
 > SST topics list sits **next to** the regular sidebar; it’s not nested.
 
 **Astro Docs (AD)** uses a different structure and has evolved organically:
@@ -695,6 +696,7 @@ Our site uses **Hideoo/starlight-sidebar-topics** (SST) for topics, alongside th
 	    - [starlight/user-components/Icon.astro](https://github.com/withastro/starlight/blob/main/packages/starlight/user-components/Icon.astro)
 	  - *(regular sidebar)* [sd/components/tabs/TabPanel.astro](https://github.com/withastro/docs/blob/main/src/components/tabs/TabPanel.astro)
 	    - *(actual regular sidebar listing)* [starlight/components/SidebarSublist.astro](https://github.com/withastro/starlight/blob/main/packages/starlight/components/SidebarSublist.astro)
+
 
 > Many components pass slots and fragments down to children, which may overwrite default behavior.
 
