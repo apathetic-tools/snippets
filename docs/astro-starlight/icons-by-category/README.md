@@ -22,7 +22,7 @@ We've organized the Starlight built-in icons into categories for you below.
 
 ### Navigation & Arrows
 
-General Use
+<small>*General Use*</small>
 
 | |  |  |  | |
 |:---:|:------:|:------:|:------:|:---:|
@@ -35,7 +35,7 @@ General Use
 
 ### Actions & Editing
 
-General Use
+<small>*General Use*</small>
 
 | |  |  |  | |
 |:---:|:------:|:------:|:------:|:---:|
@@ -52,7 +52,7 @@ General Use
 
 ### Content, Status & System
 
-General Use
+<small>*General Use*</small>
 
 | |  |  |  | |
 |:---:|:------:|:------:|:------:|:---:|
