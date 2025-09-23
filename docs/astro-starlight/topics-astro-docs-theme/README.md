@@ -188,7 +188,7 @@ Our example does so methodically so that you can more easily copy-paste verbatim
  * Source: https://github.com/HiDeoo/starlight-sidebar-topics/blob/main/packages/starlight-sidebar-topics/components/Topics.astro
  *
  * Notes: 
- *  - Component styles require specificity → prefix `.starlight-sidebar-topics`  
+ * - Component styles require specificity → prefix `.starlight-sidebar-topics`  
  * - For the `ul` itself, use `ul.starlight-sidebar-topics` (not `.starlight-sidebar-topics ul`)  
  * - Remove `:global()` wrappers since we’re in global CSS already   
  * - `[data-theme=...]` must remain the first selector   
@@ -296,7 +296,6 @@ ul.starlight-sidebar-topics::after {
  * 
  * Source: https://github.com/withastro/docs/blob/main/src/components/starlight/Sidebar.astro
  *
- * 
  * Changes:
  * - Remove astro-only selectors (`.fallback`, `.desktop-footer`, `.sidebar-pane`)  
  * - Map classes:  
@@ -421,10 +420,10 @@ ul.starlight-sidebar-topics {
  /**
   * Step 3. Adapt for use with Starlight styles and starlight-sidebar-topics markup
   *
-  * - Starlight handles bottom margin differently, so we remove it here  
-  * - The icon is wrapped in a `<div>` in starlight-sidebar-topics (vs inline in Astro Docs)
+  * - Starlight handles bottom margin differently, so we remove astro/docs'  
+  * - The icon is wrapped in a `<div>` in starlight-sidebar-topics (vs inline in astro/docs)
   *	  By default, that `<div>` is `display: block; align-items: normal;` and adds extra height.
-  *   We force it to inherit flex styles from the parent `<a>` to match Astro Docs.
+  *   We force it to inherit flex styles from the parent `<a>` to match astro/docs.
   */
 ul.starlight-sidebar-topics.starlight-sidebar-topics.starlight-sidebar-topics {
 	margin-bottom: 0;
