@@ -167,7 +167,6 @@ Our example does so methodically so that you can more easily copy-paste verbatim
  * </tabbed-content>
  */
 
-
 /**
   * Strategy
   *
@@ -394,7 +393,6 @@ ul.starlight-sidebar-topics.starlight-sidebar-topics.starlight-sidebar-topics {
 	color: var(--tab-switcher-icon-color--active);
 }
 
-
 /**
  * Step 2.2. Apply theme from astro/docs (TabbedContent.astro)
  * 
@@ -412,7 +410,6 @@ ul.starlight-sidebar-topics {
 	padding: 0;
 }
 
-
 /**
  * Step 2.3.  Apply theme from astro/docs (TabListItem.astro)
  * 
@@ -421,7 +418,6 @@ ul.starlight-sidebar-topics {
  * No styles currently defined here → nothing to apply. 
  */
  
-  
  /**
   * Step 3. Adapt for use with Starlight styles and starlight-sidebar-topics markup
   *
