@@ -365,6 +365,8 @@ ul.starlight-sidebar-topics {
 }
 ```
 
+---
+
 🎉 At this point, your site’s topics should now match the Astro Docs theme!
 You’re done with the CSS-only approach.
 
@@ -620,6 +622,8 @@ Append the following styles after the <ul> block. These are adapted from Astro D
   }
 </style>
 ```
+
+---
 
 >[!TIP]
 > To prevent future style conflicts, you can rename the class prefix  
