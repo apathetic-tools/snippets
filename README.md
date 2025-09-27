@@ -14,13 +14,16 @@ These snippets are by 😐 [Apathetic Tools](https://github.com/apathetic-tools)
 
 ## Astro-Starlight
 
-- [Theming Starlight Sidebar Topics as Astro Docs](docs/astro-starlight/topics-astro-docs-theme/README.md)  
+- [Sidebar Toggles for Starlight Themes](docs/astro-starlight/sidebar-toggles/README.md)  
+  Give readers the power to collapse left and right sidebars** on Astro Starlight sites
+
+- [Starlight Sidebar Topics using Astro Docs theme](docs/astro-starlight/topics-astro-docs-theme/README.md)  
   Transform your Starlight sidebar topics to match the polished sidebar style of Astro Docs.
 
 - [Dark Mode Theme Selector Fix for Starlight on Firefox on Windows](docs/astro-starlight/theme-selector-firefox-windows-fix/README.md)  
   Makes dark mode theme options legible in Firefox.
 
-- [SVG Icons by Category reference for use in Starlight](docs/astro-starlight/icons-by-category/README.md)  
+- [SVG Icons by Category reference for Starlight themes](docs/astro-starlight/icons-by-category/README.md)  
   Quickly find the perfect icon for your Astro Starlight components.
 
 ## Git

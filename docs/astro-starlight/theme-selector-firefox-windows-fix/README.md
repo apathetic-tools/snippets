@@ -69,19 +69,19 @@ If you don't use Tailwind, simply import `./theme-menu-layer.css` from your `glo
  * https://github.com/apathetic-tools/snippets/blob/main/docs/astro-starlight/theme-selector-firefox-windows-fix
  * Ref: https://github.com/withastro/starlight/blob/main/packages/starlight/components/ThemeSelect.astro
  */
-@layer our-theme-menu {
-	[data-theme='dark'] starlight-theme-select {
-		& select,
-		& select option,
-		& select option:checked {
-			background-color: var(--sl-color-gray-6);
-			color: var(--sl-color-text);
-		}
-		
-		& select option:hover {
-			background-color: var(--sl-color-accent-high);
-			color: var(--sl-color-text-invert);
-		}
+@layer our-theme-menu;
+
+[data-theme='dark'] starlight-theme-select {
+	& select,
+	& select option,
+	& select option:checked {
+		background-color: var(--sl-color-gray-6);
+		color: var(--sl-color-text);
+	}
+	
+	& select option:hover {
+		background-color: var(--sl-color-accent-high);
+		color: var(--sl-color-text-invert);
 	}
 }
 ```
