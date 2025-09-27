@@ -390,4 +390,4 @@ Here’s a structural map of how Starlight renders sidebars and main content, wi
 
 > **Inspired by / Attribution:**  
 > - [Windmillcode/starlight-fullview-mode](https://github.com/Windmillcode/starlight-fullview-mode) · MIT
-> - Drafted with help from ✨ ChatGPT *— plus we just love em dashes.*
+> - ✨ *ChatGPT was used to help draft language, formatting, and code — plus we just love em dashes.*

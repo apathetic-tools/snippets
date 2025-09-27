@@ -50,4 +50,4 @@ These snippets are by 😐 [Apathetic Tools](https://github.com/apathetic-tools)
 
 > These snippets are MIT-licensed for easy reuse, even though some of our full projects are AGPLv3.
 >
-> ✨ *ChatGPT was used to help outline language, formatting, and code — plus we just love em dashes.*
+> ✨ *ChatGPT was used to help draft language, formatting, and code — plus we just love em dashes.*
