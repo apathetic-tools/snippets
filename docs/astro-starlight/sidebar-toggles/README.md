@@ -64,7 +64,7 @@ pnpm add astro-icon @iconify-json/mdi
 ```jsx
 ---
 // Inspired by Apathetic Tools · MIT
-// https://github.com/apathetic-tools/snippets/blob/main/docs/astro-starlight/sidebar-toggle
+// https://github.com/apathetic-tools/snippets/blob/main/docs/astro-starlight/sidebar-toggles
 // Inspired by Windmillcode/starlight-fullview-mode · MIT
 // https://github.com/Windmillcode/starlight-fullview-mode
 
@@ -152,7 +152,7 @@ const icons = {
 `src/components/sidebar-toggles/utils/sidebarStateScript.js`
 ```js
 // Inspired by Apathetic Tools · MIT
-// https://github.com/apathetic-tools/snippets/blob/main/docs/astro-starlight/sidebar-toggle
+// https://github.com/apathetic-tools/snippets/blob/main/docs/astro-starlight/sidebar-toggles
 
 /* global document:readonly, sessionStorage:readonly, console:readonly */
 (function () {
@@ -177,7 +177,7 @@ const icons = {
 `src/components/sidebar-toggles/utils/index.ts`
 ```ts
 // Inspired by Apathetic Tools · MIT
-// https://github.com/apathetic-tools/snippets/blob/main/docs/astro-starlight/sidebar-toggle
+// https://github.com/apathetic-tools/snippets/blob/main/docs/astro-starlight/sidebar-toggles
 
 import fs from 'fs';
 import path from 'path';
@@ -232,7 +232,7 @@ import SidebarToggle from '@components/sidebar-toggles/SidebarToggle.astro'
 ```css
 /**
  * Inspired by Apathetic Tools · MIT
- * https://github.com/apathetic-tools/snippets/blob/main/docs/astro-starlight/sidebar-toggle
+ * https://github.com/apathetic-tools/snippets/blob/main/docs/astro-starlight/sidebar-toggles
  * Inspired by Windmillcode/starlight-fullview-mode · MIT
  * https://github.com/Windmillcode/starlight-fullview-mode
  */
