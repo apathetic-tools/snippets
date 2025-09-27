@@ -239,8 +239,8 @@ import SidebarToggle from '@components/sidebar-toggles/SidebarToggle.astro'
 
 /**
  * Left sidebar: .sidebar-pane + .sidebar-content + .toggle-left-sidebar-btn
- * Main content: .main-pane + content-panel
- * Right sidebar: .right-sidebar-container + .right-sidebar + .toggle-right-sidebar-btn
+ * Main content: .main-pane + content-panel + sl-container
+ * Right sidebar: .right-sidebar-container + .right-sidebar + .right-sidebar-panel + sl-container + .toggle-right-sidebar-btn
  */
 
 @layer our-sidebar-toggles;
