@@ -1,0 +1,47 @@
+# inspired by Apathetic Tools · MIT
+# https://github.com/apathetic-tools/snippets/blob/main/docs/windows/development-setup
+
+# build output
+dist/
+*.tsbuildinfo
+
+# dependencies
+.pnpm-store
+node_modules/
+package-lock.lock
+package-lock.json
+yarn.lock
+
+# logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.pnpm-debug.log*
+
+# Environment variables
+.env
+.env.production
+!.env.example
+
+# IDE configs
+.vscode/*
+.idea/
+.vimrc
+.nanorc
+.stackblitzrc
+sandbox.config.json
+
+# Allow Local workspace settings
+!.vscode/extensions.json
+!.vscode/launch.json
+!.vscode/settings.json
+
+# OS files
+.DS_Store
+Thumbs.db
+*:Zone.Identifier
+
+# Cached requests
+.cache
+**/_fonts/brand/

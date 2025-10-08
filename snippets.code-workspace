@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"path": ".",
+		},
+		{
+			"name": "icons-by-category--generate-snippet",
+			"path": "./docs/astro-starlight/icons-by-category/scripts/generate-snippet"
+		}
+	],
+}
