@@ -1,0 +1,47 @@
+{
+  "name": "icons-by-category",
+  "type": "module",
+  "version": "1.0.0",
+  "author": {
+    "name": "Apathetic Tools",
+    "url": "https://github.com/apathetic-tools"
+  },
+  "license": "MIT",
+  "scripts": {
+    "rebuild": "pnpm run clean && pnpm run fetch+build",
+    "fetch+build": "pnpm run fetch && pnpm run build",
+    "build": "pnpm run save && pnpm run generate",
+    "fetch": "tsx fetch-icons.ts",
+    "save": "tsx save-icons.ts",
+    "generate": "tsx generate-markdown.ts",
+    "clean": "node -e \"if (process.platform === 'win32') { console.error('⚠️ Must run on Linux/macOS/WSL'); process.exit(1); } else { require('child_process').execSync('rm -f ../../assets/icons/*.svg', {stdio:'inherit'}) }\"",
+    "format": "pnpm run format:code",
+    "format:ci": "pnpm run format:imports && pnpm run format:code",
+    "format:code": "prettier -w . --cache",
+    "format:imports": "echo 'Skipped formatting imports'",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "node-fetch": "^3.3.2",
+    "tsx": "^4.20.5"
+  },
+  "devDependencies": {
+    "@types/node": "^24.5.1",
+    "prettier": "^3.6.2",
+    "typescript": "^5.9.2"
+  },
+  "engines": {
+    "node": ">=22.0.0 <23.0.0"
+  },
+  "packageManager": "pnpm@10.16.1",
+  "devEngines": {
+    "runtime": {
+      "name": "node",
+      "onFail": "error"
+    },
+    "packageManager": {
+      "name": "pnpm",
+      "onFail": "error"
+    }
+  }
+}

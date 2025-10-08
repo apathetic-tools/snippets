@@ -1,0 +1,69 @@
+# Pushing from one repo to another repo or server 
+#  - using tschaub/gh-pages with webfactory/ssh-agent
+# Deploy inspired by Apathetic Tools · MIT
+# - https://github.com/apathetic-tools/snippets/blob/main/docs/github/github-pages-deploy
+# - webfactory/ssh-agent https://github.com/marketplace/actions/webfactory-ssh-agent
+# - tschaub/gh-pages https://github.com/tschaub/gh-pages
+
+name: Deploy to GitHub Pages
+
+on:
+  # Runs on pushes targeting the default branch
+  push:
+    branches: [ main ]
+  
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# Allow this job to clone the repo and create a page deployment
+# We only need read because ssh deploy key will have the write at the destination.
+# If using `actions/deploy-pages` and `GITHUB_TOKEN`  to deploy to branch on the same repo you need write.
+permissions:
+  contents: read
+  # pages: write # since we are ssh pushing, don't need this
+  # id-token: write # since we are ssh pushing, don't need this
+
+# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
+# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  # Single deploy job since we're just deploying
+  deploy:
+    runs-on: ubuntu-latest    
+    # If you stored the secret in the environment
+    environment: github-pages
+    steps:
+      - name: Checkout your repository using git
+        uses: actions/checkout@v4
+
+      - name: Start ssh-agent
+        uses: webfactory/ssh-agent@v0.9.1
+        with:
+          ssh-private-key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+        
+      - name: Configure Git for SSH
+        run: |
+          git config --global user.email "support+actions@github.com"
+          git config --global user.name "github-actions-bot"
+
+          # notice `github.com:` not `github.com/` for ssh url unlike https urls
+          git remote set-url origin git@github.com:<your org or user>/<your deployment repo>.git
+
+          # Debug check: should show SSH URL, can be removed when things are working.
+          git remote -v 
+
+      - name: Test SSH access
+        run: |
+          # Debug check, can remove once things are working
+          #  - should display: Hi ...! You've successfully authenticated, but GitHub does not provide shell access.
+          ssh -T git@github.com || true
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        run: |
+          # Debug check: Notice debug flag here that can be removed when things are working.
+          NODE_DEBUG=gh-pages npx gh-pages --dist <directory containing your deployment file, dist/build/etc> --branch <the branch you want to deploy to, not from>
+        if: ${{ github.ref == 'refs/heads/main' }} # only deploy if changes were pushed to main branch

@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "esModuleInterop": true,
+
+    // Strictness & safety
+    "strict": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+
+    // Node environment (not browser/DOM)
+    "lib": ["ES2022"],
+
+    // Allow clean import paths without .js/.ts extensions
+    "resolveJsonModule": true,
+    "allowImportingTsExtensions": true,
+
+    // Type definitions
+    "types": ["node"],
+
+    // No emit — tsx handles running, not tsc
+    "noEmit": true
+  },
+  "include": ["**/*.ts"]
+}
