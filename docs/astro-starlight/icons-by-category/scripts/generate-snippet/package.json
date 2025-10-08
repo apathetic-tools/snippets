@@ -19,7 +19,8 @@
     "format:ci": "pnpm run format:imports && pnpm run format:code",
     "format:code": "prettier -w . --cache",
     "format:imports": "echo 'Skipped formatting imports'",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean:copy": "find . -name \"*:Zone.Identifier\" -type f -delete"
   },
   "dependencies": {
     "node-fetch": "^3.3.2",
