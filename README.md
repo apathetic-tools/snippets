@@ -5,6 +5,8 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](./LICENSE)
 [![License: CC BY-NC 4.0](https://img.shields.io/badge/Docs%20License-CC%20BY--NC%204.0-blue.svg)](./LICENSE-CONTENT)
 
+*Notes and snippets from our elsewhere learnings.*
+
 A collection of small, practical snippets and guides.
 
 by 😐 [Apathetic Tools](https://github.com/apathetic-tools)  
