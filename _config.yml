@@ -6,7 +6,7 @@ theme: minima
 
 # Enable Minima’s built-in skin system
 minima:
-  skin: dark
+  skin: auto
   social_links:
     github: https://github.com/apathetic-tools/code-recipes
     rss: true
