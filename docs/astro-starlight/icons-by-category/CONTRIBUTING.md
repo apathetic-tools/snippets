@@ -24,7 +24,8 @@ icons-by-category/
         save-icons.ts  -- save icons from `.cache/` to `./assets/icons/`
         generate-markdown.ts -- generate `/README.md` from all parts
 
-⚠️ Do not edit `/README.md` directly; it will be overwritten the next time you run `pnpm run generate`.
+> [!WARNING]
+> Do not edit `/README.md` directly; it will be overwritten the next time you run `pnpm run generate`.
 
 ## Setup
 
@@ -92,12 +93,13 @@ pnpm run format
 
 ---
 
-⚠️ This snippet is partially generated. Follow the instructions above to update icons or text, then submit a pull request! 🎉
+> [!WARNING]
+> This snippet is partially generated. Follow the instructions above to update icons or text, then submit a pull request! 🎉
 
 > ✨ *ChatGPT was used to help draft language, formatting, and code — plus we just love em dashes.*
 
 <p align="center">
   <sub>😐 <a href="https://github.com/apathetic-tools">Apathetic Tools</a> © 
-  Guide <a href="../../../../LICENSE-CONTENT">CC&nbsp;BY-NC</a> · 
-  Code <a href="../../../../LICENSE">MIT</a></sub>
+  Guide <a href="../../../LICENSE-CONTENT">CC&nbsp;BY-NC</a> · 
+  Code <a href="../../../LICENSE">MIT</a></sub>
 </p>
