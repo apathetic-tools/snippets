@@ -16,7 +16,7 @@ You can observe the issue on sites such as the [official Astro Docs site](https:
 
 On Firefox on Windows, if the problem is occurring, it should look something like:
 
-![**Before** fix: white text on white background in theme selector](./theme-selector-firefox-windows-fix-assets/theme-selector-bad-colors.png)
+![**Before** fix: white text on white background in theme selector](./assets/theme-selector-bad-colors.png)
 
 ## Upstream References
 - [Firefox bug #1810958](https://bugzilla.mozilla.org/show_bug.cgi?id=1810958)
@@ -90,7 +90,7 @@ If you don't use Tailwind, simply import `./theme-menu-layer.css` from your `glo
 
 On Firefox on Windows, the fix should now look something like:
 
-![**After** fix: dark background with readable text in theme selector](./theme-selector-firefox-windows-fix-assets/theme-selector-fixed-colors.png)
+![**After** fix: dark background with readable text in theme selector](./assets/theme-selector-fixed-colors.png)
 
 ## Optional: Restrict Fix to Firefox Only
 
