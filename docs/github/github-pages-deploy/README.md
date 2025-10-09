@@ -192,7 +192,7 @@ In production you will likely want to make a separate build job, then run deploy
 #### Alternative: tschaub/gh-pages + webfactory/ssh-agent
 
 Documentation: 
-- [tschaub/gh-pages)](https://github.com/tschaub/gh-pages?tab=readme-ov-file#github-pages-project-sites)
+- [tschaub/gh-pages](https://github.com/tschaub/gh-pages?tab=readme-ov-file#github-pages-project-sites)
 - [webfactory/ssh-agent](https://github.com/marketplace/actions/webfactory-ssh-agent)
 
 

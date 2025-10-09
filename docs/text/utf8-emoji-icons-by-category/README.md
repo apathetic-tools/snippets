@@ -149,7 +149,7 @@ If writing on GitHub, you can use convenient shortcodes for many emoji. See the 
 
 ### Astro Starlight
 
-See our ✂️ [Astro Starlight Icons by Category Snippet](../../docs/astro-starlight/icons-by-category/README.md) for inspiration when using that framework for even more options including SVG icons.
+See our ✂️ [Astro Starlight Icons by Category Snippet](../../../docs/astro-starlight/icons-by-category/README.md) for inspiration when using that framework for even more options including SVG icons.
 
 ### Full List
 
