@@ -57,35 +57,28 @@ jobs:
           source: ./_pages-repo/
           destination: ./_dist-site-repo
       
-      - name: Upload artifact gh-pages
-        if: ${{ github.ref == 'refs/heads/main' }} # only deploy main        
+      - name: Upload artifact gh-pages        
+        if: github.ref == 'refs/heads/main' # only deploy main        
+        id: upload-gh-pages
         uses: actions/upload-artifact@v4
         with:
           name: github-pages
           path: ./_dist
-
-      - name: Set output if gh-pages upload succeeded
-        id: upload-gh-pages-output
-        if: success()
-        run: echo "artifact_gh_pages=success" >> $GITHUB_OUTPUT
-
+    
       - name: Upload artifact site-repo README        
-        if: ${{ github.ref == 'refs/heads/main' && env.DEPLOY_README_BRANCH != '' }} # only deploy main        
+        if: github.ref == 'refs/heads/main' && env.DEPLOY_README_BRANCH != '' # only deploy main        
+        id: upload-site-repo-readme
         uses: actions/upload-artifact@v4
         with:
           name: site-repo-readme
           path: ./_dist-site-repo
 
-      - name: Set output if site-repo upload succeeded
-        id: upload-site-repo-readme-output
-        if: success()
-        run: echo "artifact_site_repo_readme=success" >> $GITHUB_OUTPUT
     outputs:
-      artifact_gh_pages: ${{ steps.upload-gh-pages-output.outputs.artifact_gh_pages }}
-      artifact_site_repo_readme: ${{ steps.upload-site-repo-readme-output.outputs.artifact_site_repo_readme }}      
+      artifact_gh_pages: ${{ steps.upload-gh-pages.outputs.artifact-id }}
+      artifact_site_repo_readme: ${{ steps.upload-site-repo-readme.outputs.artifact-id }}
 
   deploy_gh_pages:
-    if: ${{ needs.build.outputs.artifact_gh_pages == 'success' || false }}
+    if: needs.build.outputs.artifact_gh_pages
     needs: build
     runs-on: ubuntu-latest
     environment:
@@ -119,7 +112,7 @@ jobs:
           enable_jekyll: ${{ env.ENABLE_JEKYLL }}
 
   deploy_site_repo_readme:
-    if: ${{ needs.build.outputs.artifact_site_repo_readme == 'success' || false }}
+    if: needs.build.outputs.artifact_site_repo_readme
     needs: build
     runs-on: ubuntu-latest
     environment:
