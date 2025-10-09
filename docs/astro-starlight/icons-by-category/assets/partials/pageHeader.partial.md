@@ -8,7 +8,7 @@ Do not edit manually. See CONTRIBUTING.md for details on updating categories or 
 🖌️ Quickly find the perfect icon for your Astro Starlight components.
 
 This [snippet](https://github.com/apathetic-tools/snippets) *(but not the icons themselves)*  was created by 😐 [Apathetic Tools](https://github.com/apathetic-tools), with thanks to [Starlight](https://starlight.astro.build/) for the original reference.  
-<sub>Guide licensed [CC BY-NC](../../../../LICENSE-CONTENT) · Code snippets [MIT](../../../../LICENSE)</sub>
+<sub>Guide licensed [CC BY-NC](../../../LICENSE-CONTENT) · Code snippets [MIT](../../../LICENSE)</sub>
 
 > [!IMPORTANT]  
 > Many icons are trademarked or strongly tied to a specific brand, product, or technology. Only use them when representing their intended meaning.

@@ -37,7 +37,7 @@ The [Starlight Markdown Blocks](https://delucis.github.io/starlight-markdown-blo
 - ✅ Emoji can stand in for icons in markdown or *Starlight Markdown Blocks* Asides
 - ⚠️ Appearance may differ across platforms; use SVGs for a **consistent look**  
 
-See our ✂️ [UTF-8 Emoji Icons by Category](../../../../docs/text/utf8-emoji-icons-by-category/README.md) for inspiration.
+See our ✂️ [UTF-8 Emoji Icons by Category](../../../docs/text/utf8-emoji-icons-by-category/README.md) for inspiration.
 
 ---
 
@@ -62,6 +62,6 @@ Unlicensed sources are referenced for context only and are not redistributed her
 
 <p align="center">
   <sub>😐 <a href="https://github.com/apathetic-tools">Apathetic Tools</a> © 
-  Guide <a href="../../../../LICENSE-CONTENT">CC&nbsp;BY-NC</a> · 
-  Code <a href="../../../../LICENSE">MIT</a></sub>
+  Guide <a href="../../../LICENSE-CONTENT">CC&nbsp;BY-NC</a> · 
+  Code <a href="../../../LICENSE">MIT</a></sub>
 </p>

@@ -8,7 +8,7 @@ Do not edit manually. See CONTRIBUTING.md for details on updating categories or 
 🖌️ Quickly find the perfect icon for your Astro Starlight components.
 
 This [snippet](https://github.com/apathetic-tools/snippets) *(but not the icons themselves)*  was created by 😐 [Apathetic Tools](https://github.com/apathetic-tools), with thanks to [Starlight](https://starlight.astro.build/) for the original reference.  
-<sub>Guide licensed [CC BY-NC](../../../../LICENSE-CONTENT) · Code snippets [MIT](../../../../LICENSE)</sub>
+<sub>Guide licensed [CC BY-NC](../../../LICENSE-CONTENT) · Code snippets [MIT](../../../LICENSE)</sub>
 
 > [!IMPORTANT]  
 > Many icons are trademarked or strongly tied to a specific brand, product, or technology. Only use them when representing their intended meaning.
@@ -23,6 +23,7 @@ The [Astro Starlight](https://starlight.astro.build/) integration only supports 
 We've organized the Starlight built-in icons into categories for you below.
 
 ## Built-in Icons
+
 
 ### Navigation & Arrows
 
@@ -280,7 +281,7 @@ The [Starlight Markdown Blocks](https://delucis.github.io/starlight-markdown-blo
 - ✅ Emoji can stand in for icons in markdown or *Starlight Markdown Blocks* Asides
 - ⚠️ Appearance may differ across platforms; use SVGs for a **consistent look**  
 
-See our ✂️ [UTF-8 Emoji Icons by Category](../../../../docs/text/utf8-emoji-icons-by-category/README.md) for inspiration.
+See our ✂️ [UTF-8 Emoji Icons by Category](../../../docs/text/utf8-emoji-icons-by-category/README.md) for inspiration.
 
 ---
 
@@ -305,6 +306,7 @@ Unlicensed sources are referenced for context only and are not redistributed her
 
 <p align="center">
   <sub>😐 <a href="https://github.com/apathetic-tools">Apathetic Tools</a> © 
-  Guide <a href="../../../../LICENSE-CONTENT">CC&nbsp;BY-NC</a> · 
-  Code <a href="../../../../LICENSE">MIT</a></sub>
+  Guide <a href="../../../LICENSE-CONTENT">CC&nbsp;BY-NC</a> · 
+  Code <a href="../../../LICENSE">MIT</a></sub>
 </p>
+
