@@ -15,7 +15,7 @@ When using the [Windows Subsystem for Linux (WSL)](https://learn.microsoft.com/e
 You’ll typically notice this when running `pnpm run dev`.
 
 > [!TIP] 
-> For best performance, run your project from the WSL filesystem. It avoids this issue entirely and is much faster. See [Windows Development Setup](../windows/development-setup) for details.
+> For best performance, run your project from the WSL filesystem. It avoids this issue entirely and is much faster. See [Windows Development Setup](../../windows/development-setup) for details.
 
 If you still want to work from `/mnt/...`, you can apply this Vite polling fix. It enables polling only when the project is running under WSL and located on the Windows-mounted filesystem.
 
