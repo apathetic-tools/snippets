@@ -1,0 +1,51 @@
+title: Apathetic Recipes
+description: Notes and snippets from our elsewhere learnings.
+author: Apathetic Tools
+# Use the Minima theme — the dark variant
+theme: minima
+
+# Enable Minima’s built-in skin system
+minima:
+  skin: dark
+  social_links:
+    github: https://github.com/apathetic-tools/code-recipes
+    rss: true
+
+# GitHub Pages config
+url: "https://apathetic-recipes.github.io"
+baseurl: "" # keep empty since it’s the root site
+
+# Optional: make Markdown slightly nicer
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+
+# Disable Jekyll post date suffixes — treat recipes as pages
+collections:
+  recipes:
+    output: true
+    permalink: /:path/
+
+# Default metadata for all pages
+defaults:
+  -
+    scope:
+      path: ""
+      type: "recipes"
+    values:
+      layout: page
+      author: Foyer
+      comments: false
+      share: false
+
+# Plugins supported by GitHub Pages
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Exclude build noise
+exclude:
+  - Gemfile*
+  - node_modules
+  - scripts/
